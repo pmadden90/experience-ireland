@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Simply The West</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English|Irish+Grover" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+
+
+
+        <!-- Page Content  -->
+        <div id="content">
+            <div class="overlay">
+                <div class="stw-header">
+                    <h1 data-heading="Simply The West">
+                        <span class="homepage-header">Simply The West</span>
+                    </h1>
+                </div>
+            </div>
+            <div class="under-overlay">
+                <img class="mySlides" src="assets/media/carrick.jpg">
+                <img class="mySlides" src="assets/media/clew-bay.jpg">
+                <img class="mySlides" src="assets/media/knock-airport-view.jpg">
+                <img class="mySlides" src="assets/media/kylemore-abbey.jpg">
+                <img class="mySlides" src="assets/media/surf-west.jpg">
+                <img class="mySlides" src="assets/media/westport.jpg">
+            </div>
+        </div>
+        <nav id="main">
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#content">
+                    <i class="fas fa-home"></i>
+                </a>
+                </li>
+                <li>
+                    <a href="#maps">
+                    <i class="fas fa-map-marked"></i>
+                </a>
+                </li>
+                <!--<li>
+                    <a href="#itenary-list">
+                    <i class="fas fa-clipboard-list"></i>
+                </a>
+                </li>-->
+                <li>
+                    <a href="#gallery-captions">
+                    <i class="fas fa-camera-retro"></i>
+                </a>
+                </li>
+                <!--<li>
+                    <a href="#featured-places">
+                    <i class="fas fa-comments"></i>
+                    
+                </a>
+                </li>-->
+                <li>
+                    <a href="#airport">
+                    <i class="fas fa-plane-departure"></i>
+                </a>
+                </li>
+                <li>
+                    <a href="#accomodation">
+                    <i class="fas fa-bed"></i>
+                </a>
+                </li>
+                <li>
+                    <a href="#search-filter">
+                    <i class="fas fa-search-location"></i>
+                </a>
+                </li>
+                <!--<li>
+                    <a href="#nightlife">
+                    <i class="fas fa-glass-cheers"></i>
+                   
+                </a>
+                </li>-->
+            </ul>
+
+        </nav>
+        <section id="maps">
+            <div class="section-header">
+                <h1>Planning The Trip</h1>
+            </div>
+            <div class="row map-area">
+                <div class="col-xs-3">
+                    <div id="itenary-list">
+                        <div class="row local-storage">
+                            <div class="wrapper">
+                                <h2>Places We Want To Visit</h2>
+                                <p></p>
+                                <ul class="itenary">
+                                    <li>Where We Want To Visit</li>
+                                </ul>
+                                <form class="add-items">
+                                    <input type="text" class="itenary-input" name="item" placeholder="Type a place or activity you'd like to do here" required>
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <input type="submit" class="btn btn-success btn-sm" value="+ Add Place/Activity">
+                                        </div>
+                                        <div class="col-xs-5">
+                                            <input type="submit" class="btn btn-info btn-sm" value="Email List">
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <input type="reset" class="btn btn-danger btn-sm" value="Reset List" onClick="this.form.reset()" />
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-8">
+                    <div class="row map-div">
+                        <div id="map"></div>
+                        <!--<div id="legend"><h3>Legend</h3></div>-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="search-filter">
+            <div class="section-header">
+                <h1>Looking For Something Specific?</h1>
+            </div>
+            <div class="row search-wrap">
+                <form class="search-form">
+                    <input type="text" class="search" placeholder="County or Category">
+                    <ul class="suggestions">
+                        <li>Filter by county</li>
+                        <li>or category</li>
+                    </ul>
+                </form>
+                <p>Categories: Scenery, Activity, Cultural, Historical, Relaxation, Hotel, Restaurant</p>
+            </div>
+
+        </section>
+
+
+        <section id="gallery-captions">
+            <div class="section-header">
+                <h1>Something For Everyone</h1>
+            </div>
+            <div class="panels">
+                <div class="panel panel1">
+                    <p>Activities</p>
+                    <p>Lough Key</p>
+                    <p><a href="https://loughkey.ie/" target="_blank">🡺Find out more</a></p>
+                </div>
+                <div class="panel panel2">
+                    <p>Culture</p>
+                    <p>Galway</p>
+                    <p><a href="https://www.galwaytourism.ie/" target="_blank">🡺Find out more</a></p>
+                </div>
+                <div class="panel panel3">
+                    <p>Wilderness</p>
+                    <p>Achill</p>
+                    <p><a href="http://www.visitachill.com/en/index.html" target="_blank">🡺Find out more</a></p>
+                </div>
+                <div class="panel panel4">
+                    <p>Relax</p>
+                    <p>Strandhill</p>
+                    <p><a href="http://gostrandhill.com/" target="_blank">🡺Find out more</a></p>
+                </div>
+                <div class="panel panel5">
+                    <p>Rural</p>
+                    <p>Museum</p>
+                    <p><a href="https://www.museum.ie/Country-Life" target="_blank">🡺Find out more</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!--<section id="featured-places">
+            <div class="places-div">
+                <div id="places">
+                    <h2>Recommended Activities & Places</h2>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card stream1">
+                            <img class="card_image" src="assets/media/loughkeyview.jpg" alt="Lough Key Forest Park">
+                            <div class="card_bottom">
+                                <h3>Lough Key Forest Park</h3>
+                                <ul style="display: none;">
+                                    <li>Zipline along amongst the trees of Lough Key Forest</li>
+                                    <li>Cycle around the beautiful park</li>
+                                    <li>Hop aboard a boat to get a breathtaking view of the surrounding area</li>
+                                    <li>Segway tours, camping facilities and even puzzle rooms to solve</li>
+                                    <li><a href="https://loughkey.ie/" target="_blank">🡺Find out more</a></li>
+                                </ul>
+                                <button class="bottom_button">🖰</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card stream1">
+                            <img class="card_image" src="assets/media/strandhill-sligo.jpg" alt="Strandhill">
+                            <div class="card_bottom">
+                                <h3>Strandhill</h3>
+                                <ul style="display: none;">
+                                    <li>Visit a hugely popular location along the Wild Atlantic Way</li>
+                                    <li>Lots to do in a small area - take your pick of surfing, seaweed baths, yoga classes, some of Ireland's best ice cream or simply enoy the beach</li>
+                                    <li>Plenty options for accomodation</li>
+                                    <li><a href="http://gostrandhill.com/" target="_blank">🡺Experience Strandhill</a></li>
+                                </ul>
+                                <button class="bottom_button">🖰</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card stream1">
+                            <img class="card_image" src="assets/media/museum-castlebar.jpg" alt="Museum of Country Life">
+                            <div class="card_bottom">
+                                <h3>Museum Of Country Life</h3>
+                                <ul style="display: none;">
+                                    <li>Learn about rural life in Ireland from years gone by</li>
+                                    <li>Immerse yourself in the unique stories, rich heritage and fascinating cultural traditions of our rural ancestors</li>
+                                    <li><a href="https://www.museum.ie/Country-Life" target="_blank">
+                                    🡺Find out more</a></li>
+                                </ul>
+                                <button class="bottom_button">🖰</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card stream1">
+                            <img class="card_image" src="assets/media/eyre-square.jpg" alt="Galway City">
+                            <div class="card_bottom">
+                                <h3>Galway City</h3>
+                                <ul style="display: none;">
+                                    <li>Experience the European Capital of Cultre for 2020</li>
+                                    <li>Street performers on Shop Street</li>
+                                    <li>A city of history, culture and great craic</li>
+                                    <li>A great base to organise trips to Connemara National Park and The Aran Islands</li>
+                                    <li><a href="https://www.galwaytourism.ie/" target="_blank">🡺Find out more</a></li>
+                                </ul>
+                                <button class="bottom_button">🖰</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card stream1">
+                            <img class="card_image" src="assets/media/keem-bay.jpg" alt="Achill Island">
+                            <div class="card_bottom">
+                                <h3>Achill Island</h3>
+                                <ul style="display: none;">
+                                    <li>Visit another extremely popular location along the Wild Atlantic Way</li>
+                                    <li>Find peace and tranquility in Keem Bay - a breathtakingly beautiful beach and bay (you might spot a dolphin or two)</li>
+                                    <li>See megalithic tombs, ancient forts, historic churches and deserted villages - history at every turn</li>
+                                    <li><a href="http://www.visitachill.com/en/index.html" target="_blank">🡺Achill Island</a></li>
+                                </ul>
+                                <button class="bottom_button">🖰</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card stream1">
+                            <img class="card_image" src="assets/media/killary-harbour.jpg" alt="Killary Fjord">
+                            <div class="card_bottom">
+                                <h3>Killary Fjord</h3>
+                                <ul style="display: none;">
+                                    <li>Visit Ireland's only fjord</li>
+                                    <li>Challenge yourself - Killary Adventure Centre has team building and solo activites that will push and thrill you</li>
+                                    <li><a href="http://killaryadventure.com/en/adventure-activities-galway" target="_blank">
+                                    🡺Killary Adventure Co</a></li>
+                                </ul>
+                                <button class="bottom_button">🖰</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+
+        <section id="airport">
+            <div class="section-header">
+                <h1>Jetting In</h1>
+            </div>
+            <div class="row">
+                <div class="col-xs-8">
+                    <div class="container container-skyscanner">
+                        <div data-skyscanner-widget="SearchWidget" data-destination-iata-code="'NOC'" data-colour="#D3D3D3" data-widget-scale="2.5"></div>
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <h3>Fly Direct or Connect To Knock Via These Airports</h3>
+                    <div class="row airport-list">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Airport</th>
+                                    <th scope="col">Code</th>
+                                    <th scope="col">Airline</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"><i class="fa fa-plane" aria-hidden="true"></i></th>
+                                    <td>London Stansted</td>
+                                    <td>STN</td>
+                                    <td><a href="http://ryanair.ie" target="_blank">Ryanair</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><i class="fa fa-plane" aria-hidden="true"></i></th>
+                                    <td>London Gatwick</td>
+                                    <td>LGW</td>
+                                    <td><a href="http://ryanair.ie" target="_blank">Ryanair</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><i class="fa fa-plane" aria-hidden="true"></i></th>
+                                    <td>London Luton</td>
+                                    <td>LTN</td>
+                                    <td><a href="http://ryanair.ie" target="_blank">Ryanair</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><i class="fa fa-plane" aria-hidden="true"></i></th>
+                                    <td>Manchester</td>
+                                    <td>STN</td>
+                                    <td><a href="https://www.flybe.com/flights-from/knock" target="_blank">Flybe</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><i class="fa fa-plane" aria-hidden="true"></i></th>
+                                    <td>Liverpool</td>
+                                    <td>LPL</td>
+                                    <td><a href="http://ryanair.ie" target="_blank">Ryanair</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><i class="fa fa-plane" aria-hidden="true"></i></th>
+                                    <td>Birmingham</td>
+                                    <td>BHX</td>
+                                    <td><a href="https://www.flybe.com/flights-from/knock" target="_blank">Flybe</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><i class="fa fa-plane" aria-hidden="true"></i></th>
+                                    <td>East Midlands</td>
+                                    <td>EMA</td>
+                                    <td><a href="http://ryanair.ie" target="_blank">Ryanair</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><i class="fa fa-plane" aria-hidden="true"></i></th>
+                                    <td>Edinburgh</td>
+                                    <td>EDI</td>
+                                    <td><a href="https://www.flybe.com/flights-from/knock" target="_blank">Flybe</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><i class="fa fa-plane" aria-hidden="true"></i></th>
+                                    <td>Bristol</td>
+                                    <td>BRS</td>
+                                    <td><a href="http://ryanair.ie" target="_blank">Ryanair</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><i class="fa fa-plane" aria-hidden="true"></i></th>
+                                    <td>Alicante</td>
+                                    <td>ALC</td>
+                                    <td><a href="http://ryanair.ie" target="_blank">Ryanair</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><i class="fa fa-plane" aria-hidden="true"></i></th>
+                                    <td>Barcelona-Girona</td>
+                                    <td>GRO</td>
+                                    <td><a href="http://ryanair.ie" target="_blank">Ryanair</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><i class="fa fa-plane" aria-hidden="true"></i></th>
+                                    <td>Lanzarote</td>
+                                    <td>ACE</td>
+                                    <td><a href="http://ryanair.ie" target="_blank">Ryanair</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><i class="fa fa-plane" aria-hidden="true"></i></th>
+                                    <td>Malaga</td>
+                                    <td>AGP</td>
+                                    <td><a href="http://ryanair.ie" target="_blank">Ryanair</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><i class="fa fa-plane" aria-hidden="true"></i></th>
+                                    <td>Tenerife</td>
+                                    <td>TFS</td>
+                                    <td><a href="http://ryanair.ie" target="_blank">Ryanair</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><i class="fa fa-plane" aria-hidden="true"></i></th>
+                                    <td>Cologne</td>
+                                    <td>CGN</td>
+                                    <td><a href="http://ryanair.ie" target="_blank">Ryanair</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><i class="fa fa-plane" aria-hidden="true"></i></th>
+                                    <td>Milan</td>
+                                    <td>MXP</td>
+                                    <td><a href="http://ryanair.ie" target="_blank">Ryanair</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><i class="fa fa-plane" aria-hidden="true"></i></th>
+                                    <td>Faro</td>
+                                    <td>FAO</td>
+                                    <td><a href="http://ryanair.ie" target="_blank">Ryanair</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><i class="fa fa-plane" aria-hidden="true"></i></th>
+                                    <td>Split</td>
+                                    <td>SPU</td>
+                                    <td><a href="http://ryanair.ie" target="_blank">Ryanair</a></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section id="accomodation">
+            <div class="section-header">
+                <h1>Places To Stay The Night</h1>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card stream1">
+                        <img class="card_image" src="assets/media/ashford-castle.jpg" alt="Hotels">
+                        <div class="card_bottom">
+                            <h2>Hotels</h2>
+                            <ul style="display: none;">
+                                <li>Experience the west of Ireland in some of the most beautiful locations anywhere</li>
+                                <li>Relax in spas, swimming pools or saunas in style (depending on availability)</li>
+                                <li>Get expert knowledge on local excursions or activities from the staff</li>
+                                <li><a href="https://ie.hotels.com/search.do?resolved-location=REGION%3A11108289%3AUNKNOWN%3AUNKNOWN&destination-id=11108289&q-destination=Connacht,%20Ireland&q-rooms=1&q-room-0-adults=2&q-room-0-children=0" target="_blank">Click here to find a hotel or hotels for your trip</a></li>
+                            </ul>
+                            <button class="bottom_button">🖰</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card stream1">
+                        <img class="card_image" src="assets/media/aughris-house-b&b.jpg" alt="B&Bs">
+                        <div class="card_bottom">
+                            <h2>Bed & Breakfasts</h2>
+                            <ul style="display: none;">
+                                <li>Hundreds of unique locations</li>
+                                <li>Hundreds of unique owners with the sort of local knowledge you can use to get the best out of your stay in the area</li>
+                                <li>High standards of comfort, care and cleanliness</li>
+                                <li><a href="https://www.bandbireland.com/destinations/the-west" target="_blank">Find a beautiful B&B</a></li>
+                            </ul>
+                            <button class="bottom_button">🖰</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card stream1">
+                        <img class="card_image" src="assets/media/airbnb-logo.png" alt="Airbnb">
+                        <div class="card_bottom">
+                            <h2>AirBnB</h2>
+                            <ul style="display: none;">
+                                <li>Get a house, apartment or simply a room in an Airbnb</li>
+                                <li>Pick a location central in a city or town around the west</li>
+                                <li>Or maybe you'd like to experience an authentic rural Irish home in the wilderness</li>
+                                <li><a href="https://www.airbnb.co.uk/s/Connacht/homes?refinement_paths%5B%5D=%2Fhomes&adults=1&children=0&checkin=&checkout=&place_id=ChIJHQsMc9j9W0gRYBwUehVITfQ&allow_override%5B%5D=&s_tag=WDU7V1aK" target="_blank">
+                                    Find some quirky AirBnBs for your trip</a></li>
+                            </ul>
+                            <button class="bottom_button">🖰</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+
+        <!--<section id="nightlife">
+            <h2>Nightlife In The West of Ireland</h2>
+            <div class="row">
+                <div class="col-md-3 galway-night">
+                    <h4>Galway City</h4>
+                </div>
+                <div class="col-md-3 carrick-night">
+
+                </div>
+                <div class="col-md-3 westport-night">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 sligo-night">
+
+                </div>
+                <div class="col-md-3 aran-night">
+
+                </div>
+                <div class="col-md-3 ennis-night">
+
+                </div>
+            </div>
+        </section>-->
+
+    </div>
+
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAYnUjZz_QaP44ljPHqccjeFCNFxHAFB6k&callback=initMap"></script>
+    <script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
+    <script src="assets/js/maps.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/gallery.js"></script>
+    <script src="assets/js/search.js"></script>
+    <script src="assets/js/itenary.js"></script>
+
+    <script>
+        var span = document.querySelector("span");
+
+        span.addEventListener("input", function() {
+            var text = this.innerText;
+            this.setAttribute("data-heading", text);
+            this.parentElement.setAttribute("data-heading", text);
+        });
+    </script>
+</body>
+
+</html>

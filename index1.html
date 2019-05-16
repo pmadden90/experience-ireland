@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simply The West</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English|Irish+Grover" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+
+    <script src="assets/js/text_effect.js"></script>
+
+</head>
+
+<body>
+    <main>
+        <!--<nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="index.html" class="navbar-brand">
+                    Simply The West
+                    </a>
+                </div>
+            <div class="navbar-collapse collapse" id="navbar">
+                <ul class="nav navbar-nav options">
+                    <li class="active">
+                        <a class="options1" href="https://irelandwestairport.com/"><i class="fa fa-plane" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="active">
+                        <a class="options6" href="https://www.wildatlanticway.com/highlights/wild-atlantic-way-festivals-2019"><i class="fa fa-calendar"></i></a>
+                    </li>
+                    <li class="active">
+                        <a class="options3" href="https://www.instagram.com/thewildatlanticway/?hl=en"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>-->
+        <div class="page-header">
+            <h1 data-heading="Simply The West">
+                <span>Simply The West</span>
+            </h1>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-4">
+                <i class="fas fa-map-marked-alt"></i>
+                <h3>Places to visit in the west of Ireland</h3>
+                <div class="map-div">
+                    <div id="map"></div>
+                    <!--<div id="legend"><h3>Legend</h3></div>-->
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <div class="row">
+                    <div class="col-xs-12 filter-area">
+                        <input type="text" placeholder="Search">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p>Placeholder Text</p>
+                        <p>Tripadvisor API will be placed here</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <div class="row skyscanner">
+                    <div class="container container-skyscanner">
+                        <div data-skyscanner-widget="SearchWidget" data-destination-iata-code="'NOC'" data-colour="#FAFAFA"></div>
+                    </div>
+                </div>
+                <div class="row airport-list">
+                    <h3>Fly Direct or Connect Via These Airports</h3>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Airport</th>
+                                <th scope="col">Code</th>
+                                <th scope="col">Airline</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"><i class="fa fa-plane" aria-hidden="true"></i></th>
+                                <td>London Stansted</td>
+                                <td>STN</td>
+                                <td><a href="http://ryanair.ie" target="_blank">Ryanair</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><i class="fa fa-plane" aria-hidden="true"></i></th>
+                                <td>London Gatwick</td>
+                                <td>LGW</td>
+                                <td><a href="http://ryanair.ie" target="_blank">Ryanair</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><i class="fa fa-plane" aria-hidden="true"></i></th>
+                                <td>London Luton</td>
+                                <td>LTN</td>
+                                <td><a href="http://ryanair.ie" target="_blank">Ryanair</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><i class="fa fa-plane" aria-hidden="true"></i></th>
+                                <td>Manchester</td>
+                                <td>STN</td>
+                                <td><a href="https://www.flybe.com/flights-from/knock" target="_blank">Flybe</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><i class="fa fa-plane" aria-hidden="true"></i></th>
+                                <td>Liverpool</td>
+                                <td>LPL</td>
+                                <td><a href="http://ryanair.ie" target="_blank">Ryanair</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><i class="fa fa-plane" aria-hidden="true"></i></th>
+                                <td>Birmingham</td>
+                                <td>BHX</td>
+                                <td><a href="https://www.flybe.com/flights-from/knock" target="_blank">Flybe</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><i class="fa fa-plane" aria-hidden="true"></i></th>
+                                <td>East Midlands</td>
+                                <td>EMA</td>
+                                <td><a href="http://ryanair.ie" target="_blank">Ryanair</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><i class="fa fa-plane" aria-hidden="true"></i></th>
+                                <td>Edinburgh</td>
+                                <td>EDI</td>
+                                <td><a href="https://www.flybe.com/flights-from/knock" target="_blank">Flybe</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><i class="fa fa-plane" aria-hidden="true"></i></th>
+                                <td>Bristol</td>
+                                <td>BRS</td>
+                                <td><a href="http://ryanair.ie" target="_blank">Ryanair</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><i class="fa fa-plane" aria-hidden="true"></i></th>
+                                <td>Alicante</td>
+                                <td>ALC</td>
+                                <td><a href="http://ryanair.ie" target="_blank">Ryanair</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><i class="fa fa-plane" aria-hidden="true"></i></th>
+                                <td>Barcelona-Girona</td>
+                                <td>GRO</td>
+                                <td><a href="http://ryanair.ie" target="_blank">Ryanair</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><i class="fa fa-plane" aria-hidden="true"></i></th>
+                                <td>Lanzarote</td>
+                                <td>ACE</td>
+                                <td><a href="http://ryanair.ie" target="_blank">Ryanair</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><i class="fa fa-plane" aria-hidden="true"></i></th>
+                                <td>Malaga</td>
+                                <td>AGP</td>
+                                <td><a href="http://ryanair.ie" target="_blank">Ryanair</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><i class="fa fa-plane" aria-hidden="true"></i></th>
+                                <td>Tenerife</td>
+                                <td>TFS</td>
+                                <td><a href="http://ryanair.ie" target="_blank">Ryanair</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><i class="fa fa-plane" aria-hidden="true"></i></th>
+                                <td>Cologne</td>
+                                <td>CGN</td>
+                                <td><a href="http://ryanair.ie" target="_blank">Ryanair</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><i class="fa fa-plane" aria-hidden="true"></i></th>
+                                <td>Milan</td>
+                                <td>MXP</td>
+                                <td><a href="http://ryanair.ie" target="_blank">Ryanair</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><i class="fa fa-plane" aria-hidden="true"></i></th>
+                                <td>Faro</td>
+                                <td>FAO</td>
+                                <td><a href="http://ryanair.ie" target="_blank">Ryanair</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><i class="fa fa-plane" aria-hidden="true"></i></th>
+                                <td>Split</td>
+                                <td>SPU</td>
+                                <td><a href="http://ryanair.ie" target="_blank">Ryanair</a></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+        
+
+    </main>
+
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuWmCd4uV1HF5lKuc3pNIphGREQZXQRtE&callback=initMap"></script>
+    <script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
+    <script src="assets/js/maps.js"></script>
+    
+</body>
+
+</html>

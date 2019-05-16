@@ -1,0 +1,550 @@
+html,
+body {
+  background-color: #FAFAFA;
+  width: 100vw;
+}
+
+h2,
+h3,
+h4 {
+  font-family: 'Irish Grover', cursive;
+  color: #50C878;
+}
+
+.section-header {
+  font-family: 'Irish Grover', cursive;
+  color: #50C878;
+  font-size: 3em;
+  text-align: center;
+}
+
+
+#content {
+  width: 100vw;
+}
+
+
+#main a {
+  color: #000000;
+  font-weight: 600;
+}
+
+#main a:hover {
+  color: #FAFAFA;
+  font-weight: 700;
+}
+
+#main .fas {
+  font-size: 50px;
+  padding: 10px;
+  margin-right: 5px;
+}
+
+nav {
+  background: #50C878;
+  top: 0;
+  height: 15vh;
+  width: 100%;
+  transition: all 0.5s;
+  position: relative;
+  z-index: 9;
+}
+
+.fixed-nav nav {
+  position: fixed;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li.logo {
+  max-width: 0;
+  overflow: hidden;
+  background: white;
+  transition: all .5s;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.fixed-nav li.logo {
+  max-width: 500px;
+}
+
+li.logo a {
+  color: black;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+  color: white;
+  transition: all 0.2s;
+  text-transform: uppercase;
+}
+
+.page-header {
+  background-image: url('http://i66.tinypic.com/24ya3wg.jpg');
+}
+
+.homepage-header {
+  font-family: 'Irish Grover', cursive;
+  font-size: 115px;
+  text-shadow: 1px 1px #006400, 2px 2px #006400, 3px 3px #006400;
+  -webkit-transition: all 0.12s ease-out;
+  -moz-transition: all 0.12s ease-out;
+  -o-transition: all 0.12s ease-out;
+  color: #FFFFFF;
+  /* Emerald Green --> #50C878*/
+  line-height: 75vh;
+}
+
+.stw-header {
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.overlay {
+  position: relative;
+  width: 100vw;
+  height: 85vh;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.2)
+}
+
+.overlay h1 {
+  margin: auto;
+  text-align: center;
+}
+
+.under-overlay {
+  position: absolute;
+  top: 0px;
+  overflow: hidden;
+  width: 100vw;
+  height: 85vh;
+}
+
+.under-overlay img {
+  width: 100vw;
+  height: 100vh;
+}
+
+mySlides {
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Shrinking the sidebar from 250px to 80px and center aligining its content*/
+
+/*Sections*/
+
+#itenary-list {
+  margin-top: 20px;
+  max-height: 75vh;
+  width: 100%;
+  background-color: grey;
+  display: inline-block;
+}
+
+.itenary-input {
+  width: 80%;
+}
+
+.local-storage {
+  margin-right: -20px;
+  margin-left: 0;
+}
+
+/*Map*/
+
+.map-area {
+  background-color: #COCOCO;
+  min-height: 75vh;
+}
+
+#maps {
+  min-height: 75vh;
+  border-radius: 3px;
+  border-color: #FAFAFA;
+  border-width: 3px;
+  margin: 5px;
+  margin-bottom: 20px;
+  padding: 5px;
+  width: 100%;
+  display: inline-block;
+}
+
+.map-div {
+  border-color: #FAFAFA;
+  border-width: 8px;
+  border-style: solid;
+  width: 100%;
+  height: 75vh;
+  background-color: #DCDCDC;
+}
+
+#map {
+  min-height: 100%;
+}
+
+#legend {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  padding: 10px;
+  margin: 10px;
+  border: 3px solid #000;
+}
+/*Gallery Area CSS*/
+
+#gallery-captions {
+  min-height: 75vh;
+  border-radius: 3px;
+  border-color: #FAFAFA;
+  border-width: 3px;
+  margin: 5px;
+  padding: 5px;
+  width: 100vw;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+.panels {
+  height: 75vh;
+  overflow: hidden;
+  display: flex;
+}
+
+.panel {
+  background: #6B0F9C;
+  box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+  color: white;
+  text-align: center;
+  align-items: center;
+  /* Safari transitionend event.propertyName === flex */
+  /* Chrome + FF transitionend event.propertyName === flex-grow */
+  transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+  flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+  background 0.2s;
+  font-size: 1.5em;
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel1 {
+  background-image: url(../media/loughkeyview.jpg);
+}
+
+.panel2 {
+  background-image: url(../media/eyre-square.jpg);
+}
+
+.panel3 {
+  background-image: url(../media/keem-bay.jpg);
+}
+
+.panel4 {
+  background-image: url(../media/strandhill-sligo.jpg);
+}
+
+.panel5 {
+  background-image: url(../media/museum-castlebar.jpg);
+}
+
+/* Flex Items */
+
+.panel>* {
+  margin: 0;
+  width: 100%;
+  transition: transform 0.5s;
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel>*:first-child {
+  transform: translateY(-100%);
+}
+
+.panel.open-active>*:first-child {
+  transform: translateY(0);
+}
+
+.panel>*:last-child {
+  transform: translateY(100%);
+}
+
+.panel.open-active>*:last-child {
+  transform: translateY(0);
+}
+
+.panel p {
+  text-transform: uppercase;
+  font-family: 'Irish Grover', cursive;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+  font-size: 2em;
+}
+
+.panel p:nth-child(2) {
+  font-size: 1.4em;
+}
+
+.panel:hover {
+  cursor: pointer;
+}
+
+.panel.open {
+  flex: 5;
+  font-size: 1.4em;
+}
+
+.panel a:link {
+  color: white;
+}
+
+.cta {
+  color: white;
+  text-decoration: none;
+}
+
+
+
+/*Search-Filter*/
+
+#search-filter {
+  height: 75vh;
+  background-color: #DCDCDC;
+  font-family: 'helvetica neue';
+  font-size: 20px;
+  font-weight: 200;
+  box-sizing: border-box;
+  width: 100vw;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+input {
+  width: 100%;
+  padding: 20px;
+}
+
+.search-form {
+  max-width: 400px;
+  margin: 50px auto;
+}
+
+input.search {
+  margin: 0;
+  text-align: center;
+  outline: 0;
+  border: 10px solid #F7F7F7;
+  width: 120%;
+  left: -10%;
+  position: relative;
+  top: 10px;
+  z-index: 2;
+  border-radius: 5px;
+  font-size: 40px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
+}
+
+.suggestions {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  /*perspective: 20px;*/
+}
+
+.suggestions li {
+  background: white;
+  list-style: none;
+  border-bottom: 1px solid #D8D8D8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+  margin: 0;
+  padding: 20px;
+  transition: background 0.2s;
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+
+.suggestions li:nth-child(even) {
+  transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1.001);
+  background: linear-gradient(to bottom, #ffffff 0%, #EFEFEF 100%);
+}
+
+.suggestions li:nth-child(odd) {
+  transform: perspective(100px) rotateX(-3deg) translateY(3px);
+  background: linear-gradient(to top, #ffffff 0%, #EFEFEF 100%);
+}
+
+span.population {
+  font-size: 15px;
+}
+
+/*Featured Places & Activities*/
+
+#featured-places {
+  min-height: 75vh;
+  background-color: #FAFAFA;
+  width: 100vw;
+  align-items: center;
+}
+
+#featured-places h2,
+h3,
+h4 {
+  text-align: center;
+  margin-left: auto;
+}
+
+#featured-places img {
+  margin-left: auto;
+}
+
+
+
+
+
+
+/*Filter Area*/
+
+.search-filter {
+  min-height: 75vh;
+}
+
+.search-wrap form {
+  height: 80%;
+  margin-top: 20px;
+}
+
+.search-form {
+  padding-top: 120px;
+}
+
+/*Airports & Skyscanner Area*/
+
+.skyscanner {
+  min-height: 50vh;
+}
+
+container-skyscanner {
+  width: 100%;
+
+}
+
+#airport {
+  height: 65vh;
+  background-color: #d3d3d3;
+  font-weight: 800;
+  width: 100vw;
+  margin: auto;
+  /*margin-bottom: 17.5vh; For smaller screens so will be added to */
+}
+
+#airport h3 {
+  text-align: center;
+  font-weight: bold;
+  color: #00B2D6;;
+}
+
+.airport-list {
+  max-height: 50vh;
+  overflow-y: scroll;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+.airport-list h3 {
+  background-color: #COCOCO;
+}
+
+/*Accomodation*/
+
+#accomodation {
+  min-height: 40vh;
+  background-color: #e1f1e1;
+  width: 100vw;
+}
+
+#accomodation h2,
+h3 {
+  text-align: center;
+}
+
+.card_image {
+  width: 300px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  flex: 1;
+  /* */
+  display: flex;
+  /* make the contents controllable by flexbox*/
+  flex-flow: column;
+  /* */
+  min-width: 240px;
+  /**/
+  margin: 10px;
+  padding: 20px;
+  color: #000000;
+}
+
+.card>img {
+  max-width: 225px;
+}
+
+.card li {
+  font-size: 1.2em;
+  font-weight: 900;
+}
+
+.bottom_button {
+  font-size: 2em;
+}
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
