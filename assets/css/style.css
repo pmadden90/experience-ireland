@@ -409,8 +409,8 @@ input.search {
   background: linear-gradient(to top, #ffffff 0%, #EFEFEF 100%);
 }
 
-span.population {
-  font-size: 15px;
+.search-wrap p {
+  text-align: center;
 }
 
 /*Featured Places & Activities*/
@@ -467,6 +467,7 @@ container-skyscanner {
 #airport {
   height: 65vh;
   background-color: #d3d3d3;
+  background-image: url(../media/knock-airport.jpg);
   font-weight: 800;
   width: 100vw;
   margin: auto;

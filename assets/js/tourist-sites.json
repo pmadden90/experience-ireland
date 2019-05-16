@@ -1,239 +1,611 @@
-[
-    {"name": "Croagh Patrick",
-     "county": "Mayo",
-    "latitude": 53.7599,
-    "longitude": 9.6598,
-    "category": "Religious" "Scenery" "Hiking",
-    },
-    
-    {"name": "Cliffs of Moher",
-     "county": "Clare",
-    "latitude": 52.9715,
-    "longitude": 9.4309,
-    "category": "Scenery" "Walking",
-    },
-    
-    {"name": "Glencar Waterfalls",
-     "county": "Leitrim",
-    "latitude": 54.3400,
-    "longitude": 8.3682,
-    "category": "Scenery" "Walking",
-    },
-    
-    {"name": "Cong",
-     "county": "Mayo",
-    "latitude": 53.5417,
-    "longitude": 9.2835,
-    "category": "Film/TV",
-    },
-    
-    {"name": "The Burren",
-     "county": "Clare",
-    "latitude": 52.9968,
-    "longitude": 9.0374,
-    "category": "Scenery" "Walking",
-    },
-    
-    {"name": "Achill Island",
-     "county": "Mayo",
-    "latitude": 53.9620,
-    "longitude": 10.0153,
-    "category": "Scenery" "Driving",
-    },
-    
-    {"name": "Linenhall Arts Centre",
-     "county": "Mayo",
-    "latitude": 53.8580,
-    "longitude": 9.2973,
-    "category": "Arts",
-    },
-    
-    {"name": "Benbulbin",
-     "county": "Sligo",
-    "latitude": 54.3667,
-    "longitude": 8.4744,
-    "category": "Scenery" "Walking",
-    },
-    
-    {"name": "Aillwee Cave",
-     "county": "Clare",
-    "latitude": 53.0891,
-    "longitude": 9.1437,
-    "category": "Scenery" "Walking",
-    },
-    
-    {"name": "Eyre Square",
-     "county": "Galway",
-    "latitude": 53.2743,
-    "longitude": 9.0492,
-    "category": "Walking" "Cultural",
-    },
-    
-    {"name": "Galway City Museum",
-     "county": "Galway",
-    "latitude": 53.2697,
-    "longitude": 9.0536,
-    "category": "Historical",
-    },
-    
-    {"name": "Spanish Arch",
-     "county": "Galway",
-    "latitude": 53.2697,
-    "longitude": 9.0541,
-    "category": "Historical" "Scenery",
-    },
-    
-    {"name": "Aran Islands",
-     "county": "Galway",
-    "latitude": 53.0972,
-    "longitude": 9.6563,
-    "category": "Boat" "Walking" "Cycle",
-    },
-    
-    {"name": "Connemara National Park",
-     "county": "Galway",
-    "latitude": 53.5384,
-    "longitude": 9.8875,
-    "category": "Walking" "Scenery",
-    },
-    
-    {"name": "Kylemore Abbey",
-     "county": "Galway",
-    "latitude": 53.5616,
-    "longitude": 9.8893,
-    "category": "Walking" "Scenery",
-    },
-    
-    {"name": "Killary Fjord",
-     "county": "Mayo",
-    "latitude": 53.6167,
-    "longitude": 9.7999,
-    "category": "Scenery" "Boat",
-    },
-    
-    {"name": "Ceide Field",
-     "county": "Mayo",
-    "latitude": 54.3050,
-    "longitude": 9.4569,
-    "category": "Historical" "Walking",
-    },
-    
-    {"name": "Strandhill",
-     "county": "Sligo",
-    "latitude": 54.2700,
-    "longitude": 8.5989,
-    "category": "Activities" "Scenery",
-    },
-    
-    {"name": "Lough Key Forest Park",
-     "county": "Roscommon",
-    "latitude": 53.9854,
-    "longitude": 8.2344,
-    "category": "Activities" "Walking",
-    },
-    
-    {"name": "Westport House",
-     "county": "Mayo",
-    "latitude": 53.8000,
-    "longitude": 9.5467,
-    "category": "Activities" "Walking",
-    },
-    
-     {"name": "Mount Falcon Estate",
-     "county": "Mayo",
-    "latitude": 54.0569,
-    "longitude": 9.1574,
-    "category": "Activities" "Walking",
-    },
-    
-    {"name": "Galway Racecourse",
-     "county": "Galway",
-    "latitude": 53.2982,
-    "longitude": 8.9968,
-    "category": "Sport",
-    },
-    
-    {"name": "Connacht Rugby Stadium",
-     "county": "Galway",
-    "latitude": 53.2790,
-    "longitude": 9.0397,
-    "category": "Sport",
-    },
-    
-    {"name": "The Dock Arts Centre",
-     "county": "Leitrim",
-    "latitude": 53.9449,
-    "longitude": 8.0980,
-    "category": "Arts",
-    }, 
-    
-    {"name": "Arigna Mining Experience",
-     "county": "Roscommon",
-    "latitude": 54.0776,
-    "longitude": 8.1208,
-    "category": "Historical" "Activities",
-    },
-    
-    {"name": "Lissadell House",
-     "county": "Sligo",
-    "latitude": 54.3467,
-    "longitude": 8.5809,
-    "category": "Historical",
-    },
-    
-    {"name": "Carrowmore Megalithic Cemetery",
-     "county": "Sligo",
-    "latitude": 54.2507,
-    "longitude": 8.5809,
-    "category": "Historical" "Walking",
-    },
-    
-    {"name": "The Devil's Chimney Waterfall",
-     "county": "Sligo",
-    "latitude": 54.3405,
-    "longitude": 8.3929,
-    "category": "Scenery" "Walking",
-    },
-    
-    {"name": "National Museum of Country Life",
-     "county": "Mayo",
-    "latitude": 53.8836,
-    "longitude": 9.2075,
-    "category": "Historical" "Walking",
-    },
-    
-    {"name": "Michael Davitt Museum",
-     "county": "Mayo",
-    "latitude": 53.9211,
-    "longitude": 9.1308,
-    "category": "Historical",
-    },
-    
-    {"name": "Moore Hall",
-     "county": "Mayo",
-    "latitude": 53.7134,
-    "longitude": 9.2262,
-    "category": "Scenery" "Walking",
-    },
-    
-    {"name": "Marian Shrine - Knock",
-     "county": "Mayo",
-    "latitude": 53.7921,
-    "longitude": 8.9172,
-    "category": "Religious",
-    },
-    
-    {"name": "Father Ted's House",
-     "county": "Clare",
-    "latitude": 53.0105,
-    "longitude": 9.0305,
-    "category": "Film/TV",
-    },
-    
-    {"name": "Salthill Prom",
-     "county": "Galway",
-    "latitude": 53.1539,
-    "longitude": 9.0430,
-    "category": "Religious",
-    },
-    ]
+/*[{
+		"name": "Croagh Patrick",
+		"county": "Mayo",
+		"latitude": 53.7599,
+		"longitude": 9.6598,
+		"category": "Religious",
+		"category": "Scenery",
+		"category": "Hiking"
+	},
+
+	{
+		"name": "Cliffs of Moher",
+		"county": "Clare",
+		"latitude": 52.9715,
+		"longitude": 9.4309,
+		"category": "Scenery",
+		"category": "Walking"
+	},
+
+	{
+		"name": "Glencar Waterfalls",
+		"county": "Leitrim",
+		"latitude": 54.3400,
+		"longitude": 8.3682,
+		"category": "Scenery",
+		"category": "Walking"
+	},
+
+	{
+		"name": "Cong",
+		"county": "Mayo",
+		"latitude": 53.5417,
+		"longitude": 9.2835,
+		"category": "Film/TV"
+	},
+
+	{
+		"name": "The Burren",
+		"county": "Clare",
+		"latitude": 52.9968,
+		"longitude": 9.0374,
+		"category": "Scenery",
+		"category": "Walking"
+	},
+
+	{
+		"name": "Achill Island",
+		"county": "Mayo",
+		"latitude": 53.9620,
+		"longitude": 10.0153,
+		"category": "Scenery",
+		"category": "Driving",
+		"category": "Kayaking",
+		"category": "Surfing"
+	},
+
+	{
+		"name": "Linenhall Arts Centre",
+		"county": "Mayo",
+		"latitude": 53.8580,
+		"longitude": 9.2973,
+		"category": "Arts",
+		"category": "Theatre"
+	},
+
+	{
+		"name": "Benbulbin",
+		"county": "Sligo",
+		"latitude": 54.3667,
+		"longitude": 8.4744,
+		"category": "Scenery",
+		"category": "Walking"
+	},
+
+	{
+		"name": "Aillwee Cave",
+		"county": "Clare",
+		"latitude": 53.0891,
+		"longitude": 9.1437,
+		"category": "Scenery",
+		"category": "Walking"
+	},
+
+	{
+		"name": "Eyre Square",
+		"county": "Galway",
+		"latitude": 53.2743,
+		"longitude": 9.0492,
+		"category": "Walking",
+		"category": "Cultural",
+		"category": "Music",
+		"category": "Shopping"
+	},
+
+	{
+		"name": "Galway City Museum",
+		"county": "Galway",
+		"latitude": 53.2697,
+		"longitude": 9.0536,
+		"category": "Historical"
+	},
+
+	{
+		"name": "Spanish Arch",
+		"county": "Galway",
+		"latitude": 53.2697,
+		"longitude": 9.0541,
+		"category": "Historical",
+		"category": "Scenery"
+	},
+
+	{
+		"name": "Aran Islands",
+		"county": "Galway",
+		"latitude": 53.0972,
+		"longitude": 9.6563,
+		"category": "Boat",
+		"category": "Walking",
+		"category": "Cycling"
+	},
+
+	{
+		"name": "Connemara National Park",
+		"county": "Galway",
+		"latitude": 53.5384,
+		"longitude": 9.8875,
+		"category": "Walking",
+		"category": "Scenery"
+	},
+
+	{
+		"name": "Kylemore Abbey",
+		"county": "Galway",
+		"latitude": 53.5616,
+		"longitude": 9.8893,
+		"category": "Walking",
+		"category": "Scenery"
+	},
+
+	{
+		"name": "Killary Fjord",
+		"county": "Mayo",
+		"latitude": 53.6167,
+		"longitude": 9.7999,
+		"category": "Scenery",
+		"category": "Boat"
+	},
+
+	{
+		"name": "Killary Adventure Co",
+		"county": "Mayo",
+		"latitude": 53.6167,
+		"longitude": 9.7999,
+		"category": "Activities",
+		"category": "Shooting",
+		"category": "Archery",
+		"category": "Kayaking",
+		"category": "Obstacle Course"
+	},
+
+	{
+		"name": "Ceide Field",
+		"county": "Mayo",
+		"latitude": 54.3050,
+		"longitude": 9.4569,
+		"category": "Historical",
+		"category": "Walking"
+	},
+
+	{
+		"name": "Strandhill",
+		"county": "Sligo",
+		"latitude": 54.2700,
+		"longitude": 8.5989,
+		"category": "Activities",
+		"category": "Scenery",
+		"category": "Surfing",
+		"category": "Relaxing",
+		"category": "Spas"
+	},
+
+	{
+		"name": "Lough Key Forest Park",
+		"county": "Roscommon",
+		"latitude": 53.9854,
+		"longitude": 8.2344,
+		"category": "Activities",
+		"category": "Walking",
+		"category": "Ziplining",
+		"category": "Boat",
+		"category": "Segways",
+		"category": "Kids"
+	},
+
+	{
+		"name": "Westport House",
+		"county": "Mayo",
+		"latitude": 53.8000,
+		"longitude": 9.5467,
+		"category": "Activities",
+		"category": "Walking",
+		"category": "Ziplining",
+		"category": "Zorbing",
+		"category": "Kids"
+	},
+
+	{
+		"name": "Mount Falcon Estate",
+		"county": "Mayo",
+		"latitude": 54.0569,
+		"longitude": 9.1574,
+		"category": "Activities",
+		"category": "Walking",
+		"category": "Shooting",
+		"category": "Archery",
+		"category": "Fishing"
+	},
+
+	{
+		"name": "Galway Racecourse",
+		"county": "Galway",
+		"latitude": 53.2982,
+		"longitude": 8.9968,
+		"category": "Sport"
+	},
+
+	{
+		"name": "Connacht Rugby Stadium",
+		"county": "Galway",
+		"latitude": 53.2790,
+		"longitude": 9.0397,
+		"category": "Sport"
+	},
+
+	{
+		"name": "The Dock Arts Centre",
+		"county": "Leitrim",
+		"latitude": 53.9449,
+		"longitude": 8.0980,
+		"category": "Arts",
+		"category": "Theatre"
+	},
+
+	{
+		"name": "Arigna Mining Experience",
+		"county": "Roscommon",
+		"latitude": 54.0776,
+		"longitude": 8.1208,
+		"category": "Historical",
+		"category": "Activities"
+	},
+
+	{
+		"name": "Lissadell House",
+		"county": "Sligo",
+		"latitude": 54.3467,
+		"longitude": 8.5809,
+		"category": "Historical"
+	},
+
+	{
+		"name": "Carrowmore Megalithic Cemetery",
+		"county": "Sligo",
+		"latitude": 54.2507,
+		"longitude": 8.5809,
+		"category": "Historical",
+		"category": "Walking"
+	},
+
+	{
+		"name": "The Devil's Chimney Waterfall",
+		"county": "Sligo",
+		"latitude": 54.3405,
+		"longitude": 8.3929,
+		"category": "Scenery",
+		"category": "Walking"
+	},
+
+	{
+		"name": "National Museum of Country Life",
+		"county": "Mayo",
+		"latitude": 53.8836,
+		"longitude": 9.2075,
+		"category": "Historical",
+		"category": "Walking"
+	},
+
+	{
+		"name": "Michael Davitt Museum",
+		"county": "Mayo",
+		"latitude": 53.9211,
+		"longitude": 9.1308,
+		"category": "Historical"
+	},
+
+	{
+		"name": "Moore Hall",
+		"county": "Mayo",
+		"latitude": 53.7134,
+		"longitude": 9.2262,
+		"category": "Scenery",
+		"category": "Walking"
+	},
+
+	{
+		"name": "Marian Shrine - Knock",
+		"county": "Mayo",
+		"latitude": 53.7921,
+		"longitude": 8.9172,
+		"category": "Religious"
+	},
+
+	{
+		"name": "Father Ted's House",
+		"county": "Clare",
+		"latitude": 53.0105,
+		"longitude": 9.0305,
+		"category": "Film/TV"
+	},
+
+	{
+		"name": "Salthill Prom",
+		"county": "Galway",
+		"latitude": 53.1539,
+		"longitude": 9.0430,
+		"category": "Scenery",
+		"category": "Walking"
+	}] */
+	
+	[{
+		"name": "Croagh Patrick",
+		"county": "Mayo",
+		"latitude": 53.7599,
+		"longitude": 9.6598,
+		"category": "Religious"
+	},
+
+	{
+		"name": "Cliffs of Moher",
+		"county": "Clare",
+		"latitude": 52.9715,
+		"longitude": 9.4309,
+		"category": "Scenery"
+
+	},
+
+	{
+		"name": "Glencar Waterfalls",
+		"county": "Leitrim",
+		"latitude": 54.3400,
+		"longitude": 8.3682,
+		"category": "Scenery"
+	},
+
+	{
+		"name": "Cong",
+		"county": "Mayo",
+		"latitude": 53.5417,
+		"longitude": 9.2835,
+		"category": "Film/TV"
+	},
+
+	{
+		"name": "The Burren",
+		"county": "Clare",
+		"latitude": 52.9968,
+		"longitude": 9.0374,
+		"category": "Scenery"
+	},
+
+	{
+		"name": "Achill Island",
+		"county": "Mayo",
+		"latitude": 53.9620,
+		"longitude": 10.0153,
+		"category": "Scenery"
+	},
+
+	{
+		"name": "Linenhall Arts Centre",
+		"county": "Mayo",
+		"latitude": 53.8580,
+		"longitude": 9.2973,
+		"category": "Arts"
+	},
+
+	{
+		"name": "Benbulbin",
+		"county": "Sligo",
+		"latitude": 54.3667,
+		"longitude": 8.4744,
+		"category": "Scenery"
+	},
+
+	{
+		"name": "Aillwee Cave",
+		"county": "Clare",
+		"latitude": 53.0891,
+		"longitude": 9.1437,
+		"category": "Scenery"
+	},
+
+	{
+		"name": "Eyre Square",
+		"county": "Galway",
+		"latitude": 53.2743,
+		"longitude": 9.0492,
+		"category": "Walking"
+	},
+
+	{
+		"name": "Galway City Museum",
+		"county": "Galway",
+		"latitude": 53.2697,
+		"longitude": 9.0536,
+		"category": "Historical"
+	},
+
+	{
+		"name": "Spanish Arch",
+		"county": "Galway",
+		"latitude": 53.2697,
+		"longitude": 9.0541,
+		"category": "Historical"
+	},
+
+	{
+		"name": "Aran Islands",
+		"county": "Galway",
+		"latitude": 53.0972,
+		"longitude": 9.6563,
+		"category": "Boat"
+	},
+
+	{
+		"name": "Connemara National Park",
+		"county": "Galway",
+		"latitude": 53.5384,
+		"longitude": 9.8875,
+		"category": "Walking"
+	},
+
+	{
+		"name": "Kylemore Abbey",
+		"county": "Galway",
+		"latitude": 53.5616,
+		"longitude": 9.8893,
+		"category": "Walking"
+	},
+
+	{
+		"name": "Killary Fjord",
+		"county": "Mayo",
+		"latitude": 53.6167,
+		"longitude": 9.7999,
+		"category": "Scenery"
+	},
+
+	{
+		"name": "Killary Adventure Co",
+		"county": "Mayo",
+		"latitude": 53.5929,
+		"longitude": 9.7686,
+		"category": "Activities"
+	},
+
+	{
+		"name": "Ceide Field",
+		"county": "Mayo",
+		"latitude": 54.3050,
+		"longitude": 9.4569,
+		"category": "Historical"
+	},
+
+	{
+		"name": "Strandhill",
+		"county": "Sligo",
+		"latitude": 54.2700,
+		"longitude": 8.5989,
+		"category": "Activities"
+	},
+
+	{
+		"name": "Lough Key Forest Park",
+		"county": "Roscommon",
+		"latitude": 53.9854,
+		"longitude": 8.2344,
+		"category": "Activities"
+	},
+
+	{
+		"name": "Westport House",
+		"county": "Mayo",
+		"latitude": 53.8000,
+		"longitude": 9.5467,
+		"category": "Activities"
+	},
+
+	{
+		"name": "Mount Falcon Estate",
+		"county": "Mayo",
+		"latitude": 54.0569,
+		"longitude": 9.1574,
+		"category": "Activities"
+	},
+
+	{
+		"name": "Galway Racecourse",
+		"county": "Galway",
+		"latitude": 53.2982,
+		"longitude": 8.9968,
+		"category": "Sport"
+	},
+
+	{
+		"name": "Connacht Rugby Stadium",
+		"county": "Galway",
+		"latitude": 53.2790,
+		"longitude": 9.0397,
+		"category": "Sport"
+	},
+
+	{
+		"name": "The Dock Arts Centre",
+		"county": "Leitrim",
+		"latitude": 53.9449,
+		"longitude": 8.0980,
+		"category": "Arts"
+
+	},
+
+	{
+		"name": "Arigna Mining Experience",
+		"county": "Roscommon",
+		"latitude": 54.0776,
+		"longitude": 8.1208,
+		"category": "Historical"
+	},
+
+	{
+		"name": "Lissadell House",
+		"county": "Sligo",
+		"latitude": 54.3467,
+		"longitude": 8.5809,
+		"category": "Historical"
+	},
+
+	{
+		"name": "Carrowmore Megalithic Cemetery",
+		"county": "Sligo",
+		"latitude": 54.2507,
+		"longitude": 8.5809,
+		"category": "Historical"
+	},
+
+	{
+		"name": "The Devil's Chimney Waterfall",
+		"county": "Sligo",
+		"latitude": 54.3405,
+		"longitude": 8.3929,
+		"category": "Scenery"
+	},
+
+	{
+		"name": "National Museum of Country Life",
+		"county": "Mayo",
+		"latitude": 53.8836,
+		"longitude": 9.2075,
+		"category": "Historical"
+	},
+
+	{
+		"name": "Michael Davitt Museum",
+		"county": "Mayo",
+		"latitude": 53.9211,
+		"longitude": 9.1308,
+		"category": "Historical"
+	},
+
+	{
+		"name": "Moore Hall",
+		"county": "Mayo",
+		"latitude": 53.7134,
+		"longitude": 9.2262,
+		"category": "Scenery"
+	},
+
+	{
+		"name": "Marian Shrine - Knock",
+		"county": "Mayo",
+		"latitude": 53.7921,
+		"longitude": 8.9172,
+		"category": "Religious"
+	},
+
+	{
+		"name": "Father Ted's House",
+		"county": "Clare",
+		"latitude": 53.0105,
+		"longitude": 9.0305,
+		"category": "Film/TV"
+	},
+
+	{
+		"name": "Salthill Prom",
+		"county": "Galway",
+		"latitude": 53.1539,
+		"longitude": 9.0430,
+		"category": "Scenery"
+	}
+]

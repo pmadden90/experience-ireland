@@ -31,6 +31,7 @@ function initMap() {
         { lat: 53.8000, lng: -9.5467}, // Westport House
         { lat: 53.5616, lng: -9.8893}, // Kylemore Abbey
         { lat: 53.6167, lng: -9.7999}, // Killary Fjord
+        { lat: 53.5929, lng: -9.7686}, // Killary Adventre Centre
         { lat: 53.9620, lng: -10.0153},// Achill Island
         { lat: 54.2700, lng: -8.5989}, // Strandhill
         { lat: 54.0569, lng: -9.1574}, // Mount Falcon Estate
