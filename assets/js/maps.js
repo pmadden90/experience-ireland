@@ -57,23 +57,6 @@ function initMap() {
         { lat: 53.1320, lng: -9.0012}
         ];
         
-    //Map Icons
-    var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
-    var icons = {
-        airport: {
-            icon: iconBase + '/assets/media/icons/map_symbol_airport_02.png'
-        },
-        historical: {
-            icon: iconBase + 'library_maps.png'
-        },
-        cultural: {
-            icon: iconBase + 'info-i_maps.png'
-        },
-        scenic: {
-            icon: iconBase + 'scenic_maps.png'
-        }
-    };
-
     var markers = locations.map(function(location, i) {
         return new google.maps.Marker({
             position: location,
