@@ -453,6 +453,7 @@ h4 {
   padding-top: 120px;
 }
 
+
 /*Airports & Skyscanner Area*/
 
 .skyscanner {
@@ -467,7 +468,7 @@ container-skyscanner {
 #airport {
   height: 65vh;
   background-color: #d3d3d3;
-  background-image: url(../media/knock-airport.jpg);
+  /*background-image: url(assets/media/knock-airport.jpg);*/
   font-weight: 800;
   width: 100vw;
   margin: auto;
@@ -526,7 +527,7 @@ h3 {
 }
 
 .card>img {
-  max-width: 225px;
+  max-width: 335px;
 }
 
 .card li {

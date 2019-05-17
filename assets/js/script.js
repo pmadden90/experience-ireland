@@ -31,7 +31,7 @@ window.addEventListener('scroll', fixNav);
 //wait until page is ready
 $(document).ready(function() {
 	
-	// Toggle the visibility of the paragraph when a button is clicked 
+// Toggle the visibility of the paragraph when a button is clicked 
 	$("button").click(function(){
 		$(this).prev().slideToggle('fast');
 	});
