@@ -154,19 +154,64 @@ mySlides {
 
 #itenary-list {
   margin-top: 20px;
-  max-height: 75vh;
+  min-height: 55vh;
   width: 100%;
-  background-color: grey;
   display: inline-block;
 }
 
+#itenary-list label {
+  display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    list-style: none;
+    border-bottom: 1px dotted #4682B4;
+    text-indent: 25px;
+    height: auto;
+    padding: 10px;
+    text-transform: capitalize;
+    font-family: 'Permanent Marker', cursive;
+}
+
+
 .itenary-input {
-  width: 80%;
+  width: 75%;
 }
 
 .local-storage {
   margin-right: -20px;
   margin-left: 0;
+}
+
+.notebook {
+  background-color: #f5f5f5;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.add-items {
+  color: #555;
+  font-size: 16px;
+  padding: 0 !important;
+  font-family: 'Permanent Marker', cursive;
+  border: 1px solid #dedede;
+}
+
+.add-items li:hover {
+  background-color: #f0f0f0;
+  -webkit-transition: all 0.2s;
+  -moz-transition:    all 0.2s;
+  -ms-transition:     all 0.2s;
+  -o-transition:      all 0.2s;
+}
+.lines {
+  border-left: 1px solid #ffaa9f;
+  border-right: 1px solid #ffaa9f;
+  width: 2px;
+  float: left;
+  height: 75vh;
+  margin-left: 40px;
+  
 }
 
 /*Map*/

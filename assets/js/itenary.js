@@ -17,7 +17,6 @@ const addItems = document.querySelector('.add-items');
     itenaryList.innerHTML = itenary.map((itenary, i) => {
       return `
         <li>
-          <input type="checkbox" data-index=${i} id="item${i}" ${itenary.done ? 'checked' : ''} />
           <label for="item${i}">${itenary.text}</label>
         </li>
       `;
@@ -36,5 +35,6 @@ const addItems = document.querySelector('.add-items');
   populateList(items, itemsList);
   
  
-  
+  addEventListener('reset', localStorage.clear);
   form.reset();
+ 

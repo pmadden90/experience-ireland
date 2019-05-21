@@ -332,8 +332,8 @@
 		"county": "Mayo",
 		"latitude": 53.7599,
 		"longitude": 9.6598,
-		"category": "Religious"
-	},
+		"category": "Religious",
+			},
 
 	{
 		"name": "Cliffs of Moher",
@@ -600,7 +600,183 @@
 		"longitude": 9.0305,
 		"category": "Film/TV"
 	},
-
+	
+	{
+		"name": "Voya Spa Strandhill",
+		"county": "Sligo",
+		"latitude": 53.7134,
+		"longitude": 9.2262,
+		"category": "Spa"
+	},
+	{
+		"name": "Name",
+		"county": "County",
+		"latitude": 53.7134,
+		"longitude": 9.2262,
+		"category": "-"
+	},
+{
+		"name": "Name",
+		"county": "County",
+		"latitude": 53.7134,
+		"longitude": 9.2262,
+		"category": "-"
+	},
+	
+	{
+		"name": "Name",
+		"county": "County",
+		"latitude": 53.7134,
+		"longitude": 9.2262,
+		"category": "-"
+	},
+	{
+		"name": "Name",
+		"county": "County",
+		"latitude": 53.7134,
+		"longitude": 9.2262,
+		"category": "-"
+	},
+{
+		"name": "Name",
+		"county": "County",
+		"latitude": 53.7134,
+		"longitude": 9.2262,
+		"category": "-"
+	},
+	
+	{
+		"name": "Name",
+		"county": "County",
+		"latitude": 53.7134,
+		"longitude": 9.2262,
+		"category": "-"
+	},
+	{
+		"name": "Name",
+		"county": "County",
+		"latitude": 53.7134,
+		"longitude": 9.2262,
+		"category": "-"
+	},
+	
+	{
+		"name": "Name",
+		"county": "County",
+		"latitude": 53.7134,
+		"longitude": 9.2262,
+		"category": "-"
+	},
+	{
+		"name": "Name",
+		"county": "County",
+		"latitude": 53.7134,
+		"longitude": 9.2262,
+		"category": "-"
+	},
+{
+		"name": "Name",
+		"county": "County",
+		"latitude": 53.7134,
+		"longitude": 9.2262,
+		"category": "-"
+	},
+	
+	{
+		"name": "Name",
+		"county": "County",
+		"latitude": 53.7134,
+		"longitude": 9.2262,
+		"category": "-"
+	},
+	{
+		"name": "Name",
+		"county": "County",
+		"latitude": 53.7134,
+		"longitude": 9.2262,
+		"category": "-"
+	},
+	
+	{
+		"name": "Name",
+		"county": "County",
+		"latitude": 53.7134,
+		"longitude": 9.2262,
+		"category": "-"
+	},
+	{
+		"name": "Name",
+		"county": "County",
+		"latitude": 53.7134,
+		"longitude": 9.2262,
+		"category": "-"
+	},
+{
+		"name": "Name",
+		"county": "County",
+		"latitude": 53.7134,
+		"longitude": 9.2262,
+		"category": "-"
+	},
+	
+	{
+		"name": "Name",
+		"county": "County",
+		"latitude": 53.7134,
+		"longitude": 9.2262,
+		"category": "-"
+	},
+	{
+		"name": "Name",
+		"county": "County",
+		"latitude": 53.7134,
+		"longitude": 9.2262,
+		"category": "-"
+	},
+	
+	{
+		"name": "Name",
+		"county": "County",
+		"latitude": 53.7134,
+		"longitude": 9.2262,
+		"category": "-"
+	},
+	{
+		"name": "Name",
+		"county": "County",
+		"latitude": 53.7134,
+		"longitude": 9.2262,
+		"category": "-"
+	},
+{
+		"name": "Name",
+		"county": "County",
+		"latitude": 53.7134,
+		"longitude": 9.2262,
+		"category": "-"
+	},
+	
+	{
+		"name": "Name",
+		"county": "County",
+		"latitude": 53.7134,
+		"longitude": 9.2262,
+		"category": "-"
+	},
+	{
+		"name": "Name",
+		"county": "County",
+		"latitude": 53.7134,
+		"longitude": 9.2262,
+		"category": "-"
+	},
+{
+		"name": "Name",
+		"county": "County",
+		"latitude": 53.7134,
+		"longitude": 9.2262,
+		"category": "-"
+	},
 	{
 		"name": "Salthill Prom",
 		"county": "Galway",

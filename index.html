@@ -16,14 +16,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English|Irish+Grover" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English|Irish+Grover|Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 </head>
 
 <body>
     <div class="wrapper">
-        
+
         <!-- Page Content  -->
         <div id="content">
             <div class="overlay">
@@ -95,33 +95,37 @@
             </ul>
 
         </nav>
-        
+
         <section id="maps">
             <div class="section-header">
                 <h1>Planning The Trip</h1>
             </div>
             <div class="row map-area">
-                <div class="col-xs-3">
+                <div class="col-xs-3 notebook">
                     <div id="itenary-list">
+                        <div class="lines">
+
+                        </div>
                         <div class="row local-storage">
                             <div class="wrapper">
                                 <h2>Places We Want To Visit</h2>
                                 <p></p>
                                 <ul class="itenary">
-                                    <li>Where We Want To Visit</li>
+
                                 </ul>
                                 <form class="add-items">
-                                    <input type="text" class="itenary-input" name="item" placeholder="Type a place or activity you'd like to do here" required>
+                                    <input type="text" class="itenary-input" name="item" placeholder="Create a wishlist" required>
                                     <div class="row">
                                         <div class="col-xs-3">
                                             <input type="submit" class="btn btn-success btn-sm" value="+ Add Place/Activity">
                                         </div>
                                         <div class="col-xs-5">
                                             <input type="submit" class="btn btn-info btn-sm" value="Email List">
+                                            <form id="send_email" action="send_email.php">
+                                                <input id="content" type="hidden" name="content" />
+                                            </form>
                                         </div>
-                                        <div class="col-xs-3">
-                                            <input type="reset" class="btn btn-danger btn-sm" value="Reset List" onClick="this.form.reset()" />
-                                        </div>
+
                                     </div>
                                 </form>
                             </div>
@@ -131,6 +135,19 @@
                 <div class="col-xs-8">
                     <div class="row map-div">
                         <div id="map"></div>
+                        <select id="type" onchange="filterMarkers(this.value);">
+                            <option value="">Please select category</option>
+                            <option value="scenery">Scenery</option>
+                            <option value="activities">Activities</option>
+                            <option value="sports">Sports</option>
+                            <option value="Film/TV">Film/TV</option>
+                            <option value="beach">Beaches</option>
+                            <option value="spas">Relaxation</option>
+                            <option value="arts">Arts</option>
+                            <option value="transport">Transport</option>
+                            <option value="history">History</option>
+                            <option value="religious">Religious</option>
+                        </select>
                         <!--<div id="legend"><h3>Legend</h3></div>-->
                     </div>
                 </div>
@@ -405,8 +422,8 @@
                 </div>
             </div>
         </section>-->
-        
-        
+
+
 
     </div>
 
