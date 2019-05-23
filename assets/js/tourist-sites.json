@@ -1,339 +1,10 @@
-/*[{
+[{
 		"name": "Croagh Patrick",
 		"county": "Mayo",
 		"latitude": 53.7599,
 		"longitude": 9.6598,
-		"category": "Religious",
-		"category": "Scenery",
-		"category": "Hiking"
-	},
-
-	{
-		"name": "Cliffs of Moher",
-		"county": "Clare",
-		"latitude": 52.9715,
-		"longitude": 9.4309,
-		"category": "Scenery",
-		"category": "Walking"
-	},
-
-	{
-		"name": "Glencar Waterfalls",
-		"county": "Leitrim",
-		"latitude": 54.3400,
-		"longitude": 8.3682,
-		"category": "Scenery",
-		"category": "Walking"
-	},
-
-	{
-		"name": "Cong",
-		"county": "Mayo",
-		"latitude": 53.5417,
-		"longitude": 9.2835,
-		"category": "Film/TV"
-	},
-
-	{
-		"name": "The Burren",
-		"county": "Clare",
-		"latitude": 52.9968,
-		"longitude": 9.0374,
-		"category": "Scenery",
-		"category": "Walking"
-	},
-
-	{
-		"name": "Achill Island",
-		"county": "Mayo",
-		"latitude": 53.9620,
-		"longitude": 10.0153,
-		"category": "Scenery",
-		"category": "Driving",
-		"category": "Kayaking",
-		"category": "Surfing"
-	},
-
-	{
-		"name": "Linenhall Arts Centre",
-		"county": "Mayo",
-		"latitude": 53.8580,
-		"longitude": 9.2973,
-		"category": "Arts",
-		"category": "Theatre"
-	},
-
-	{
-		"name": "Benbulbin",
-		"county": "Sligo",
-		"latitude": 54.3667,
-		"longitude": 8.4744,
-		"category": "Scenery",
-		"category": "Walking"
-	},
-
-	{
-		"name": "Aillwee Cave",
-		"county": "Clare",
-		"latitude": 53.0891,
-		"longitude": 9.1437,
-		"category": "Scenery",
-		"category": "Walking"
-	},
-
-	{
-		"name": "Eyre Square",
-		"county": "Galway",
-		"latitude": 53.2743,
-		"longitude": 9.0492,
-		"category": "Walking",
-		"category": "Cultural",
-		"category": "Music",
-		"category": "Shopping"
-	},
-
-	{
-		"name": "Galway City Museum",
-		"county": "Galway",
-		"latitude": 53.2697,
-		"longitude": 9.0536,
-		"category": "Historical"
-	},
-
-	{
-		"name": "Spanish Arch",
-		"county": "Galway",
-		"latitude": 53.2697,
-		"longitude": 9.0541,
-		"category": "Historical",
-		"category": "Scenery"
-	},
-
-	{
-		"name": "Aran Islands",
-		"county": "Galway",
-		"latitude": 53.0972,
-		"longitude": 9.6563,
-		"category": "Boat",
-		"category": "Walking",
-		"category": "Cycling"
-	},
-
-	{
-		"name": "Connemara National Park",
-		"county": "Galway",
-		"latitude": 53.5384,
-		"longitude": 9.8875,
-		"category": "Walking",
-		"category": "Scenery"
-	},
-
-	{
-		"name": "Kylemore Abbey",
-		"county": "Galway",
-		"latitude": 53.5616,
-		"longitude": 9.8893,
-		"category": "Walking",
-		"category": "Scenery"
-	},
-
-	{
-		"name": "Killary Fjord",
-		"county": "Mayo",
-		"latitude": 53.6167,
-		"longitude": 9.7999,
-		"category": "Scenery",
-		"category": "Boat"
-	},
-
-	{
-		"name": "Killary Adventure Co",
-		"county": "Mayo",
-		"latitude": 53.6167,
-		"longitude": 9.7999,
-		"category": "Activities",
-		"category": "Shooting",
-		"category": "Archery",
-		"category": "Kayaking",
-		"category": "Obstacle Course"
-	},
-
-	{
-		"name": "Ceide Field",
-		"county": "Mayo",
-		"latitude": 54.3050,
-		"longitude": 9.4569,
-		"category": "Historical",
-		"category": "Walking"
-	},
-
-	{
-		"name": "Strandhill",
-		"county": "Sligo",
-		"latitude": 54.2700,
-		"longitude": 8.5989,
-		"category": "Activities",
-		"category": "Scenery",
-		"category": "Surfing",
-		"category": "Relaxing",
-		"category": "Spas"
-	},
-
-	{
-		"name": "Lough Key Forest Park",
-		"county": "Roscommon",
-		"latitude": 53.9854,
-		"longitude": 8.2344,
-		"category": "Activities",
-		"category": "Walking",
-		"category": "Ziplining",
-		"category": "Boat",
-		"category": "Segways",
-		"category": "Kids"
-	},
-
-	{
-		"name": "Westport House",
-		"county": "Mayo",
-		"latitude": 53.8000,
-		"longitude": 9.5467,
-		"category": "Activities",
-		"category": "Walking",
-		"category": "Ziplining",
-		"category": "Zorbing",
-		"category": "Kids"
-	},
-
-	{
-		"name": "Mount Falcon Estate",
-		"county": "Mayo",
-		"latitude": 54.0569,
-		"longitude": 9.1574,
-		"category": "Activities",
-		"category": "Walking",
-		"category": "Shooting",
-		"category": "Archery",
-		"category": "Fishing"
-	},
-
-	{
-		"name": "Galway Racecourse",
-		"county": "Galway",
-		"latitude": 53.2982,
-		"longitude": 8.9968,
-		"category": "Sport"
-	},
-
-	{
-		"name": "Connacht Rugby Stadium",
-		"county": "Galway",
-		"latitude": 53.2790,
-		"longitude": 9.0397,
-		"category": "Sport"
-	},
-
-	{
-		"name": "The Dock Arts Centre",
-		"county": "Leitrim",
-		"latitude": 53.9449,
-		"longitude": 8.0980,
-		"category": "Arts",
-		"category": "Theatre"
-	},
-
-	{
-		"name": "Arigna Mining Experience",
-		"county": "Roscommon",
-		"latitude": 54.0776,
-		"longitude": 8.1208,
-		"category": "Historical",
-		"category": "Activities"
-	},
-
-	{
-		"name": "Lissadell House",
-		"county": "Sligo",
-		"latitude": 54.3467,
-		"longitude": 8.5809,
-		"category": "Historical"
-	},
-
-	{
-		"name": "Carrowmore Megalithic Cemetery",
-		"county": "Sligo",
-		"latitude": 54.2507,
-		"longitude": 8.5809,
-		"category": "Historical",
-		"category": "Walking"
-	},
-
-	{
-		"name": "The Devil's Chimney Waterfall",
-		"county": "Sligo",
-		"latitude": 54.3405,
-		"longitude": 8.3929,
-		"category": "Scenery",
-		"category": "Walking"
-	},
-
-	{
-		"name": "National Museum of Country Life",
-		"county": "Mayo",
-		"latitude": 53.8836,
-		"longitude": 9.2075,
-		"category": "Historical",
-		"category": "Walking"
-	},
-
-	{
-		"name": "Michael Davitt Museum",
-		"county": "Mayo",
-		"latitude": 53.9211,
-		"longitude": 9.1308,
-		"category": "Historical"
-	},
-
-	{
-		"name": "Moore Hall",
-		"county": "Mayo",
-		"latitude": 53.7134,
-		"longitude": 9.2262,
-		"category": "Scenery",
-		"category": "Walking"
-	},
-
-	{
-		"name": "Marian Shrine - Knock",
-		"county": "Mayo",
-		"latitude": 53.7921,
-		"longitude": 8.9172,
 		"category": "Religious"
 	},
-
-	{
-		"name": "Father Ted's House",
-		"county": "Clare",
-		"latitude": 53.0105,
-		"longitude": 9.0305,
-		"category": "Film/TV"
-	},
-
-	{
-		"name": "Salthill Prom",
-		"county": "Galway",
-		"latitude": 53.1539,
-		"longitude": 9.0430,
-		"category": "Scenery",
-		"category": "Walking"
-	}] */
-	
-	[{
-		"name": "Croagh Patrick",
-		"county": "Mayo",
-		"latitude": 53.7599,
-		"longitude": 9.6598,
-		"category": "Religious",
-			},
 
 	{
 		"name": "Cliffs of Moher",
@@ -450,7 +121,7 @@
 
 	{
 		"name": "Killary Fjord",
-		"county": "Mayo",
+		"county": "Galway",
 		"latitude": 53.6167,
 		"longitude": 9.7999,
 		"category": "Scenery"
@@ -458,7 +129,7 @@
 
 	{
 		"name": "Killary Adventure Co",
-		"county": "Mayo",
+		"county": "Galway",
 		"latitude": 53.5929,
 		"longitude": 9.7686,
 		"category": "Activities"
@@ -600,182 +271,434 @@
 		"longitude": 9.0305,
 		"category": "Film/TV"
 	},
-	
+
 	{
 		"name": "Voya Spa Strandhill",
 		"county": "Sligo",
-		"latitude": 53.7134,
-		"longitude": 9.2262,
+		"latitude": 54.2700,
+		"longitude": 8.6905,
 		"category": "Spa"
 	},
 	{
-		"name": "Name",
-		"county": "County",
-		"latitude": 53.7134,
-		"longitude": 9.2262,
-		"category": "-"
-	},
-{
-		"name": "Name",
-		"county": "County",
-		"latitude": 53.7134,
-		"longitude": 9.2262,
-		"category": "-"
-	},
-	
-	{
-		"name": "Name",
-		"county": "County",
-		"latitude": 53.7134,
-		"longitude": 9.2262,
-		"category": "-"
+		"name": "Strandhill Surf School",
+		"county": "Sligo",
+		"latitude": 54.2708,
+		"longitude": 8.6090,
+		"category": "Surfing"
 	},
 	{
-		"name": "Name",
-		"county": "County",
-		"latitude": 53.7134,
-		"longitude": 9.2262,
-		"category": "-"
+		"name": "Strandhill Campsite",
+		"county": "Sligo",
+		"latitude": 54.2719,
+		"longitude": 8.6013,
+		"category": "Camping"
 	},
-{
-		"name": "Name",
-		"county": "County",
-		"latitude": 53.7134,
-		"longitude": 9.2262,
-		"category": "-"
-	},
-	
+
 	{
-		"name": "Name",
-		"county": "County",
-		"latitude": 53.7134,
-		"longitude": 9.2262,
-		"category": "-"
+		"name": "Kilcullen Seaweed Baths (Enniscrone)",
+		"county": "Sligo",
+		"latitude": 54.2181,
+		"longitude": 9.0951,
+		"category": "Spa"
 	},
 	{
-		"name": "Name",
-		"county": "County",
-		"latitude": 53.7134,
-		"longitude": 9.2262,
-		"category": "-"
-	},
-	
-	{
-		"name": "Name",
-		"county": "County",
-		"latitude": 53.7134,
-		"longitude": 9.2262,
-		"category": "-"
+		"name": "Waterpoint Sunset Spa (Enniscrone)",
+		"county": "Sligo",
+		"latitude": 54.2174,
+		"longitude": 9.5282,
+		"category": "Spa"
 	},
 	{
-		"name": "Name",
-		"county": "County",
-		"latitude": 53.7134,
-		"longitude": 9.2262,
-		"category": "-"
+		"name": "Aran Seaweed Spa (Inisheer)",
+		"county": "Galway",
+		"latitude": 53.0594,
+		"longitude": 9.5282,
+		"category": "Spa"
 	},
-{
-		"name": "Name",
-		"county": "County",
-		"latitude": 53.7134,
-		"longitude": 9.2262,
-		"category": "-"
-	},
-	
+
 	{
-		"name": "Name",
-		"county": "County",
-		"latitude": 53.7134,
-		"longitude": 9.2262,
-		"category": "-"
+		"name": "Spa Sula Westport",
+		"county": "Mayo",
+		"latitude": 53.8015,
+		"longitude": 9.5191,
+		"category": "Spa"
 	},
 	{
-		"name": "Name",
-		"county": "County",
-		"latitude": 53.7134,
-		"longitude": 9.2262,
-		"category": "-"
+		"name": "Achill Bio-Energy Clinic",
+		"county": "Mayo",
+		"latitude": 53.9974,
+		"longitude": 10.0563,
+		"category": "Spa"
 	},
-	
+
 	{
-		"name": "Name",
-		"county": "County",
-		"latitude": 53.7134,
-		"longitude": 9.2262,
-		"category": "-"
-	},
-	{
-		"name": "Name",
-		"county": "County",
-		"latitude": 53.7134,
-		"longitude": 9.2262,
-		"category": "-"
-	},
-{
-		"name": "Name",
-		"county": "County",
-		"latitude": 53.7134,
-		"longitude": 9.2262,
-		"category": "-"
-	},
-	
-	{
-		"name": "Name",
-		"county": "County",
-		"latitude": 53.7134,
-		"longitude": 9.2262,
-		"category": "-"
+		"name": "Spirit One Spa",
+		"county": "Galway",
+		"latitude": 53.2745,
+		"longitude": 9.0431,
+		"category": "Spa"
 	},
 	{
-		"name": "Name",
-		"county": "County",
-		"latitude": 53.7134,
-		"longitude": 9.2262,
-		"category": "-"
+		"name": "ESPA at the G",
+		"county": "Galway",
+		"latitude": 53.2819,
+		"longitude": 9.0323,
+		"category": "Spa"
 	},
-	
 	{
-		"name": "Name",
-		"county": "County",
-		"latitude": 53.7134,
-		"longitude": 9.2262,
+		"name": "Pier Head Spa (Mullaghmore)",
+		"county": "Sligo",
+		"latitude": 54.4669,
+		"longitude": 8.4477,
+		"category": "Spa"
+	},
+
+	{
+		"name": "Ashford Castle",
+		"county": "Mayo",
+		"latitude": 53.5346,
+		"longitude": 9.2849,
+		"category": "Hotel"
+	},
+	{
+		"name": "The Landmark",
+		"county": "Leitrim",
+		"latitude": 53.9434,
+		"longitude": 8.0932,
+		"category": "Hotel"
+	},
+
+	{
+		"name": "The Bush Hotel",
+		"county": "Leitrim",
+		"latitude": 53.9462,
+		"longitude": 8.0939,
+		"category": "Hotel"
+	},
+	{
+		"name": "Cryan's Hotel",
+		"county": "Leitrim",
+		"latitude": 53.9434,
+		"longitude": 9.0937,
+		"category": "Hotel"
+	},
+	{
+		"name": "Breaffy House Resort",
+		"county": "Mayo",
+		"latitude": 53.8428,
+		"longitude": 9.2366,
+		"category": "Hotel"
+	},
+
+	{
+		"name": "G Hotel",
+		"county": "Galway",
+		"latitude": 53.2817,
+		"longitude": 9.0321,
 		"category": "-"
 	},
 	{
-		"name": "Name",
+		"name": "Glenlo Abbey",
 		"county": "County",
-		"latitude": 53.7134,
-		"longitude": 9.2262,
-		"category": "-"
+		"latitude": 53.3004,
+		"longitude": 9.0986,
+		"category": "Hotel"
 	},
-{
-		"name": "Name",
-		"county": "County",
-		"latitude": 53.7134,
-		"longitude": 9.2262,
-		"category": "-"
-	},
-	
+
 	{
-		"name": "Name",
-		"county": "County",
-		"latitude": 53.7134,
-		"longitude": 9.2262,
-		"category": "-"
+		"name": "Flannery's Hotel",
+		"county": "Galway",
+		"latitude": 53.2782,
+		"longitude": 9.0149,
+		"category": "Hotel"
 	},
 	{
-		"name": "Name",
-		"county": "County",
-		"latitude": 53.7134,
-		"longitude": 9.2262,
-		"category": "-"
+		"name": "The Castlecourt",
+		"county": "Mayo",
+		"latitude": 53.8016,
+		"longitude": 9.5187,
+		"category": "Hotel"
 	},
-{
-		"name": "Name",
-		"county": "County",
-		"latitude": 53.7134,
-		"longitude": 9.2262,
-		"category": "-"
+	{
+		"name": "Knockranny House",
+		"county": "Mayo",
+		"latitude": 53.8016,
+		"longitude": 9.5088,
+		"category": "Hotel"
+	},
+
+	{
+		"name": "Wyatt Hotel",
+		"county": "Mayo",
+		"latitude": 53.7993,
+		"longitude": 9.5251,
+		"category": "Hotel"
+	},
+	{
+		"name": "Westport Woods",
+		"county": "Mayo",
+		"latitude": 53.7992,
+		"longitude": 9.5412,
+		"category": "Hotel"
+	},
+	{
+		"name": "Kilronan Castle",
+		"county": "Roscommon",
+		"latitude": 54.0634,
+		"longitude": 8.1812,
+		"category": "Hotel"
+	},
+		{
+		"name": "Lough Rynn Hotel",
+		"county": "Leitrim",
+		"latitude": 53.8939,
+		"longitude": 7.8488,
+		"category": "Hotel"
+	},
+	{
+		"name": "Ice House Hotel",
+		"county": "Mayo",
+		"latitude": 54.1218,
+		"longitude": 9.1401,
+		"category": "Hotel"
+	},
+	{
+		"name": "Mount Falcon Estate",
+		"county": "Mayo",
+		"latitude": 54.0569,
+		"longitude": 9.1575,
+		"category": "Hotel"
+	},
+		{
+		"name": "Connemara Coast Hotel",
+		"county": "Galway",
+		"latitude": 53.2488,
+		"longitude": 9.2004,
+		"category": "Hotel"
+	},
+	{
+		"name": "Shearwater Hotel",
+		"county": "Galway",
+		"latitude": 53.3269,
+		"longitude": 8.2195,
+		"category": "Hotel"
+	},
+	{
+		"name": "Clayton Hotel Sligo",
+		"county": "Sligo",
+		"latitude": 54.2818,
+		"longitude": 8.4611,
+		"category": "Hotel"
+	},
+		{
+		"name": "Diamond Coast Enniscrone",
+		"county": "Sligo",
+		"latitude": 54.2049,
+		"longitude": 9.1030,
+		"category": "Hotel"
+	},
+	{
+		"name": "Westport Woods",
+		"county": "Mayo",
+		"latitude": 53.7992,
+		"longitude": 9.5412,
+		"category": "Hotel"
+	},
+	{
+		"name": "Markree Castle",
+		"county": "Sligo",
+		"latitude": 54.2049,
+		"longitude": 9.1030,
+		"category": "Hotel"
+	},
+		{
+		"name": "McWilliam Park",
+		"county": "Mayo",
+		"latitude": 53.7252,
+		"longitude": 8.9902,
+		"category": "Hotel"
+	},
+	{
+		"name": "Radison Blu Sligo",
+		"county": "Sligo",
+		"latitude": 54.2991,
+		"longitude": 8.4991,
+		"category": "Hotel"
+	},
+	{
+		"name": "Johnny McHales",
+		"county": "Mayo",
+		"latitude": 53.8603,
+		"longitude": 9.2980,
+		"category": "Pub"
+	},
+		{
+		"name": "Mick Byrne's",
+		"county": "Mayo",
+		"latitude": 53.8575,
+		"longitude": 9.2975,
+		"category": "Pub"
+	},
+	{
+		"name": "Matt Molloy's",
+		"county": "Mayo",
+		"latitude": 53.7991,
+		"longitude": 9.5227,
+		"category": "Pub"
+	},
+	{
+		"name": "McDonnell's",
+		"county": "Mayo",
+		"latitude": 54.2230,
+		"longitude": 9.9848,
+		"category": "Pub"
+	},
+		{
+		"name": "Úna's",
+		"county": "Mayo",
+		"latitude": 54.0999,
+		"longitude": 10.0683,
+		"category": "Pub"
+	},
+	{
+		"name": "JJ Harlow's",
+		"county": "Roscommon",
+		"latitude": 53.6311,
+		"longitude": 8.1903,
+		"category": "Pub"
+	},
+	{
+		"name": "Séan's Bar (Oldest Pub In The World)",
+		"county": "Roscommon",
+		"latitude": 54.4227,
+		"longitude": 7.9423,
+		"category": "Pub"
+	},
+		{
+		"name": "Tígh Neachtain",
+		"county": "Galway",
+		"latitude": 53.2714,
+		"longitude": 9.0540,
+		"category": "Pub"
+	},
+	{
+		"name": "Beach Bar",
+		"county": "Sligo",
+		"latitude": 54.2693,
+		"longitude": 8.7571,
+		"category": "Pub"
+	},
+	{
+		"name": "Joe Watty's Inis Mór",
+		"county": "Galway",
+		"latitude": 53.1239,
+		"longitude": 9.6708,
+		"category": "Pub"
+	},
+		{
+		"name": "Lynott's Achill",
+		"county": "Mayo",
+		"latitude": 53.9632,
+		"longitude": 9.9770,
+		"category": "Pub"
+	},
+	{
+		"name": "Anderson's",
+		"county": "Roscommon",
+		"latitude": 53.9100,
+		"longitude": 8.1295,
+		"category": "Pub"
+	},
+	{
+		"name": "Thomas Connolly's",
+		"county": "Sligo",
+		"latitude": 54.2728,
+		"longitude": 8.4739,
+		"category": "Pub"
+	},
+		{
+		"name": "Strand Bar Strandhill",
+		"county": "Sligo",
+		"latitude": 54.2707,
+		"longitude": 8.6084,
+		"category": "Pub"
+	},
+	{
+		"name": "The Crane Bar",
+		"county": "Galway",
+		"latitude": 53.2669,
+		"longitude": 9.0605,
+		"category": "Pub"
+	},
+	{
+		"name": "Keane's Bar (Maam)",
+		"county": "Galway",
+		"latitude": 54.5153,
+		"longitude": 9.5600,
+		"category": "Pub"
+	},
+		{
+		"name": "Mullaghmore Strand",
+		"county": "Sligo",
+		"latitude": 54.4523,
+		"longitude": 8.4414,
+		"category": "Beach"
+	},
+	{
+		"name": "Kilmurvey Beach",
+		"county": "Galway",
+		"latitude": 53.1312,
+		"longitude": 9.7499,
+		"category": "Beach"
+	},
+	{
+		"name": "Cullenamore Strand",
+		"county": "Galway",
+		"latitude": 54.2608,
+		"longitude": 8.6088,
+		"category": "Beach"
+	},
+		{
+		"name": "Rosses Point",
+		"county": "Sligo",
+		"latitude": 54.3092,
+		"longitude": 8.5719,
+		"category": "Beach"
+	},
+	{
+		"name": "Lahinch Beach",
+		"county": "Clare",
+		"latitude": 52.9337,
+		"longitude": 9.3478,
+		"category": "Beach"
+	},
+	{
+		"name": "Coral Strand",
+		"county": "Galway",
+		"latitude": 53.2297,
+		"longitude": 9.6526,
+		"category": "Beach"
+	},
+		{
+		"name": "Dog's Bay",
+		"county": "Galway",
+		"latitude": 53.3786,
+		"longitude": 9.9622,
+		"category": "Beach"
+	},
+	{
+		"name": "Old Head",
+		"county": "Mayo",
+		"latitude": 53.7758,
+		"longitude": 9.7698,
+		"category": "Beach"
+	},
+	{
+		"name": "Silverstrand",
+		"county": "Mayo",
+		"latitude": 53.6493,
+		"longitude": 9.7698,
+		"category": "Beach"
 	},
 	{
 		"name": "Salthill Prom",
