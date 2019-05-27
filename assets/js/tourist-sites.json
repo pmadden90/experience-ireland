@@ -190,6 +190,43 @@
 		"longitude": 9.0397,
 		"category": "Sport"
 	},
+	{
+		"name": "Galway GAA Stadium",
+		"county": "Galway",
+		"latitude": 53.2632,
+		"longitude": 9.0843,
+		"category": "Sport"
+	},
+
+	{
+		"name": "Mayo GAA Stadium",
+		"county": "Mayo",
+		"latitude": 53.8535,
+		"longitude": 9.2862,
+		"category": "Sport"
+	},
+	{
+		"name": "Roscommon GAA Stadium",
+		"county": "Roscommon",
+		"latitude": 53.6266,
+		"longitude": 8.1806,
+		"category": "Sport"
+	},
+
+	{
+		"name": "Leitrim GAA Stadium",
+		"county": "Leitrim",
+		"latitude": 53.9481,
+		"longitude": 8.0761,
+		"category": "Sport"
+	},
+	{
+		"name": "Sligo GAA Stadium",
+		"county": "Sligo",
+		"latitude": 54.2571,
+		"longitude": 8.4658,
+		"category": "Sport"
+	},
 
 	{
 		"name": "The Dock Arts Centre",

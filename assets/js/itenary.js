@@ -35,6 +35,6 @@ const addItems = document.querySelector('.add-items');
   populateList(items, itemsList);
   
  
-  addEventListener('reset', localStorage.clear);
-  form.reset();
+  //addEventListener('reset', localStorage.clear);
+  //form.reset();
  
