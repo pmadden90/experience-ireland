@@ -18,7 +18,16 @@ h4 {
   text-align: center;
 }
 
+.instruction-box {
+  font-family: 'Irish Grover', cursive;
+  color: #50C878;
+  font-size: .95em;
+  text-align: center;
+}
 
+.bottom-banner {
+  height: 20px;
+}
 #content {
   width: 100vw;
 }
@@ -546,6 +555,9 @@ h4 {
   min-height: 40vh;
   background-color: #e1f1e1;
   width: 100vw;
+}
+#accomodation p {
+  text-align: center;
 }
 
 #accomodation h2,

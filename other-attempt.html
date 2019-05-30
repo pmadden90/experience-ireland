@@ -54,19 +54,9 @@
                     <i class="fas fa-map-marked"></i>
                 </a>
                 </li>
-                <li>
+                <!--<li>
                     <a href="#search-filter">
                     <i class="fas fa-search-location"></i>
-                </a>
-                </li>
-                <!--<li>
-                    <a href="#itenary-list">
-                    <i class="fas fa-clipboard-list"></i>
-                </a>
-                </li>-->
-                <!--<li>
-                    <a href="#gallery-captions">
-                    <i class="fas fa-camera-retro"></i>
                 </a>
                 </li>-->
                 <li>
@@ -119,7 +109,7 @@
                                         <div class="col-xs-3">
                                             <input type="submit" class="btn btn-success btn-sm" value="+ Add Place/Activity">
                                         </div>
-                                        <div class="col-xs-5">
+                                        <div class="col-xs-3">
                                             <input type="submit" class="btn btn-info btn-sm" value="Email List">
                                             <form id="send_email" action="send_email.php">
                                                 <input id="content" type="hidden" name="content" />
@@ -137,24 +127,23 @@
                         <div id="map"></div>
                         <select id="type" onchange="filterMarkers(this.value);">
                             <option value="">Please select category</option>
-                            <option value="scenery">Scenery</option>
                             <option value="activities">Activities</option>
-                            <option value="sports">Sports</option>
-                            <option value="Film/TV">Film/TV</option>
-                            <option value="beach">Beaches</option>
-                            <option value="spa">Relaxation</option>
                             <option value="arts">Arts</option>
-                            <option value="transport">Transport</option>
+                            <option value="beach">Beaches</option>
+                            <option value="Film/TV">Film/TV</option>
                             <option value="history">History</option>
+                            <option value="spa">Relaxation</option>
                             <option value="religious">Religious</option>
+                            <option value="scenery">Scenery</option>
+                            <option value="sports">Sports</option>
+                            <option value="transport">Transport</option>
                         </select>
-                        <!--<div id="legend"><h3>Legend</h3></div>-->
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="search-filter">
+        <!--<section id="search-filter">
             <div class="section-header">
                 <h1>Looking For Something Specific?</h1>
             </div>
@@ -168,7 +157,7 @@
                     </ul>
                 </form>
             </div>
-        </section>
+        </section>-->
 
         <section id="gallery-captions">
             <div class="section-header">
@@ -345,97 +334,76 @@
         </section>
 
         <section id="accomodation">
-            <div class="section-header">
+            <p>
+                <div class="section-header">
                 <h1>Places To Stay The Night</h1>
+            </div>
+            <div class="instruction-box">
+                <p>Click on each image to learn more</p>
             </div>
             <div class="row">
                 <div class="col-sm-4">
-                    <div class="card stream1">
-                        <img class="card_image" src="assets/media/ashford-castle.jpg" alt="Hotels">
-                        <div class="card_bottom">
-                            <h2>Hotels</h2>
-                            <ul style="display: none;">
+                    <h2>Hotels</h2>
+                    <a class="show_hide"><img class="card_image" src="assets/media/ashford-castle.jpg" alt="Hotels"></a>
+                    <div class="slidingDiv card stream1">
+                        <p>
+                            <ul>
                                 <li>Experience the west of Ireland in some of the most beautiful locations anywhere</li>
                                 <li>Relax in spas, swimming pools or saunas in style (depending on availability)</li>
                                 <li>Get expert knowledge on local excursions or activities from the staff</li>
                                 <li><a href="https://ie.hotels.com/search.do?resolved-location=REGION%3A11108289%3AUNKNOWN%3AUNKNOWN&destination-id=11108289&q-destination=Connacht,%20Ireland&q-rooms=1&q-room-0-adults=2&q-room-0-children=0" target="_blank">Click here to find a hotel or hotels for your trip</a></li>
                             </ul>
-                            <button class="bottom_button">🖰</button>
-                        </div>
+                        </p>
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <div class="card stream1">
-                        <button class="bottom_button"><img class="card_image" src="assets/media/aughris-house-b&b.jpg" alt="B&Bs"></button>
-                        <div class="card_bottom">
-                            <h2>Bed & Breakfasts</h2>
-                            <ul style="display: none;">
+                    <h2>Bed & Breakfast</h2>
+                    <a class="show_hide"><img class="card_image" src="assets/media/aughris-house-b&b.jpg" alt="B&Bs"></a>
+                    <div class="slidingDiv card stream1">
+                        <p>
+                            <ul>
                                 <li>Hundreds of unique locations</li>
                                 <li>Hundreds of unique owners with the sort of local knowledge you can use to get the best out of your stay in the area</li>
                                 <li>High standards of comfort, care and cleanliness</li>
                                 <li><a href="https://www.bandbireland.com/destinations/the-west" target="_blank">Find a beautiful B&B</a></li>
                             </ul>
-                        </div>
+                        </p>
                     </div>
                 </div>
                 <div class="col-sm-3">
-                    <div class="card stream1">
-                        <img class="card_image" src="assets/media/airbnb-logo.png" alt="Airbnb">
-                        <div class="card_bottom">
-                            <h2>AirBnB</h2>
-                            <ul style="display: none;">
+                    <h2>AirBnB</h2>
+                    <a class="show_hide"><img class="card_image" src="assets/media/airbnb-logo.png" alt="Airbnb"></a>
+                    <div class="slidingDiv card stream1">
+                        <p>
+                            <ul>
                                 <li>Get a house, apartment or simply a room in an Airbnb</li>
                                 <li>Pick a location central in a city or town around the west</li>
                                 <li>Or maybe you'd like to experience an authentic rural Irish home in the wilderness</li>
                                 <li><a href="https://www.airbnb.co.uk/s/Connacht/homes?refinement_paths%5B%5D=%2Fhomes&adults=1&children=0&checkin=&checkout=&place_id=ChIJHQsMc9j9W0gRYBwUehVITfQ&allow_override%5B%5D=&s_tag=WDU7V1aK" target="_blank">
                                     Find some quirky AirBnBs for your trip</a></li>
                             </ul>
-                            <button class="bottom_button">🖰</button>
-                        </div>
+                        </p>
                     </div>
                 </div>
             </div>
+            </p>
+            
+            <div class="bottom-banner">
+                
+            </div>
         </section>
-
-        <!--<section id="nightlife">
-            <h2>Nightlife In The West of Ireland</h2>
-            <div class="row">
-                <div class="col-md-3 galway-night">
-                    <h4>Galway City</h4>
-                </div>
-                <div class="col-md-3 carrick-night">
-
-                </div>
-                <div class="col-md-3 westport-night">
-
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 sligo-night">
-
-                </div>
-                <div class="col-md-3 aran-night">
-
-                </div>
-                <div class="col-md-3 ennis-night">
-
-                </div>
-            </div>
-        </section>-->
-
-
-
+    </div>
+    </section>
     </div>
 
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
     <script src="assets/js/maps2.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAYnUjZz_QaP44ljPHqccjeFCNFxHAFB6k&callback=initMap"></script>
-    
+
     <script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/gallery.js"></script>
-    <script src="assets/js/search.js"></script>
     <script src="assets/js/itenary.js"></script>
 
     <script>
