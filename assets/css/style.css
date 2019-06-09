@@ -2,6 +2,7 @@ html,
 body {
   background-color: #FAFAFA;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 h2,
@@ -118,7 +119,7 @@ nav a {
   -o-transition: all 0.12s ease-out;
   color: #FFFFFF;
   /* Emerald Green --> #50C878*/
-  line-height: 75vh;
+  
 }
 
 .stw-header {
@@ -126,10 +127,13 @@ nav a {
   opacity: 1;
 }
 
+.tagline {
+  font-size: 0.5em;
+}
 .overlay {
   position: relative;
   width: 100vw;
-  height: 85vh;
+  height: 40vh;
   z-index: 1;
   background: rgba(0, 0, 0, 0.2)
 }
@@ -144,21 +148,26 @@ nav a {
   top: 0px;
   overflow: hidden;
   width: 100vw;
-  height: 85vh;
+  height: 40vh;
 }
 
 .under-overlay img {
   width: 100vw;
-  height: 100vh;
+  height: 40vh;
 }
 
 mySlides {
-  height: 100vh;
+  height: 40vh;
   width: 100vw;
 }
 
+.search-bar {
+  text-align: center;
+  margin-top: 10px;
+}
+
 #description {
-        font-family: Roboto;
+        font-family: 'Permanent Marker', cursive;
         font-size: 15px;
         font-weight: 300;
       }
@@ -183,7 +192,7 @@ mySlides {
         outline: none;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
         background-color: #fff;
-        font-family: Roboto;
+        font-family: 'Permanent Marker', cursive;
       }
 
       #pac-container {
@@ -197,7 +206,7 @@ mySlides {
       }
 
       .pac-controls label {
-        font-family: Roboto;
+        font-family: 'Permanent Marker', cursive;
         font-size: 13px;
         font-weight: 300;
       }
@@ -205,7 +214,7 @@ mySlides {
       #pac-input {
         background-color: #fff;
         color: black;
-        font-family: Roboto;
+        font-family: 'Permanent Marker', cursive;
         font-size: 15px;
         font-weight: 300;
         margin-left: 12px;
@@ -234,13 +243,13 @@ mySlides {
 #itenary-list {
   margin-top: 20px;
   min-height: 55vh;
-  width: 100%;
+  width: 90%;
   display: inline-block;
 }
 
 #itenary-list label {
   display: inline-block;
-    max-width: 100%;
+    max-width: 90%;
     margin-bottom: 5px;
     font-weight: 700;
     list-style: none;
@@ -273,7 +282,7 @@ mySlides {
   font-size: 16px;
   padding: 0 !important;
   font-family: 'Permanent Marker', cursive;
-  border: 1px solid #dedede;
+  
 }
 
 .add-items li:hover {
@@ -288,8 +297,8 @@ mySlides {
   border-right: 1px solid #ffaa9f;
   width: 2px;
   float: left;
-  height: 75vh;
-  margin-left: 40px;
+  min-height: 75vh;
+  margin-left: 30px;
   
 }
 
@@ -298,6 +307,7 @@ mySlides {
 .map-area {
   background-color: #COCOCO;
   min-height: 75vh;
+  top: 35vh;
 }
 
 #maps {
@@ -316,7 +326,7 @@ mySlides {
   border-color: #FAFAFA;
   border-width: 8px;
   border-style: solid;
-  width: 100%;
+  width: 55vw;
   height: 75vh;
   background-color: #DCDCDC;
 }
@@ -333,6 +343,10 @@ mySlides {
   border: 3px solid #000;
 }
 /*Gallery Area CSS*/
+
+.panel-wrappers {
+  background-color: white;
+}
 
 #gallery-captions {
   min-height: 75vh;
@@ -395,7 +409,7 @@ mySlides {
 }
 
 .panel5 {
-  background-image: url(../media/museum-castlebar.jpg);
+  background-image: url(../media/crokepark.jpg);
 }
 
 /* Flex Items */
@@ -456,7 +470,10 @@ mySlides {
   text-decoration: none;
 }
 
-
+.modal-img {
+  width: 565px;
+  height: 360px;
+}
 
 /*Search-Filter*/
 
@@ -669,7 +686,11 @@ h3 {
   font-size: 2em;
 }
 
-/**/
+/*Bottom Header*/
+#bottom-header {
+  background-color: grey;
+  text-align: center;
+}
 
 /**/
 

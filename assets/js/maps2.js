@@ -150,18 +150,20 @@ filterMarkers = function (category) {
       // This example requires the Places library. Include the libraries=places
       // parameter when you first load the API. For example:
       // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+     
+ 
 
       function initAutocomplete() {
         var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 53.906163042, lng: -8.817830062},
-          zoom: 7,
-          mapTypeId: 'google.maps.MapTypeId.TERRAIN'
+          center: {lat: 53.5384, lng: -9.8875},
+          zoom: 6.5,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
         });
 
         // Create the search box and link it to the UI element.
         var input = document.getElementById('pac-input');
         var searchBox = new google.maps.places.SearchBox(input);
-        map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+       // map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 
         // Bias the SearchBox results towards current map's viewport.
         map.addListener('bounds_changed', function() {
@@ -217,4 +219,6 @@ filterMarkers = function (category) {
           map.fitBounds(bounds);
         });
       }
+      
+      
 

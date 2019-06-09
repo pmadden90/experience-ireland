@@ -30,9 +30,8 @@ function fixNav() {
 window.addEventListener('scroll', fixNav);
 
 //wait until page is ready
+/*
 $(document).ready(function() {
-
-    
 
     $(".slidingDiv").hide();
     $(".show_hide").show();
@@ -41,6 +40,24 @@ $(document).ready(function() {
         $(this).next(".slidingDiv").slideToggle();
     });
 
-});
+});*/
 
- 
+
+	// Toggle the visibility of the paragraph when a button is clicked 
+	$("button").click(function(){
+		$(this).prev().slideToggle('fast');
+	});
+	
+	 
+	$("img").click(function(){
+		$(this).next().children("p").slideDown();
+	});
+	
+
+	$("#all_btn").click(function(){
+		$(".card").show();
+	});
+	
+	$("#select_btn").click(function(){
+		$(".card:not(highlight)").hide();
+	});
