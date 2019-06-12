@@ -160,6 +160,42 @@ filterMarkers = function (category) {
           mapTypeId: google.maps.MapTypeId.TERRAIN
         });
 
+        /*var request = {
+          location: 'center',
+          radius: 5076,
+          types: ['bar', 'restaurant', 'lodging', 'natural_feature', 'activities', 'cities']
+        };
+        
+        var service = new google.maps.places.PlacesService(map);
+        
+        service.nearbySearch (request, callback);
+        
+        function callback (results, status) {
+          if (status == google.maps.places.PlacesServiceStatus.OK) {
+            for (var i = 0; i < results.length; i++) {
+              createMarker(results [i]);
+            }
+          }
+        }
+        
+        function createMarker(place) {
+          var placeLoc = place.geometry.location;
+          var marker = new google.maps.Marker ({
+            map: map,
+            position: place.geometry.location
+          });
+        }
+        */
+        
+        //Display infoWindow in seperate div
+        google.maps.event.addListener(marker, 'click', (function(i) {
+      return function() {
+        // infowindow.setContent(locations[i].info);
+        // infowindow.open(map, marker);
+        document.getElementById('infoDiv').innerHTML = locations[i].info;
+      }
+    })(i));
+
         // Create the search box and link it to the UI element.
         var input = document.getElementById('pac-input');
         var searchBox = new google.maps.places.SearchBox(input);

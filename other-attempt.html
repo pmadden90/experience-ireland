@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
 
 <head>
@@ -22,8 +22,7 @@
 </head>
 
 <body>
-    <div class="wrapper">
-
+    <main>
         <!-- Page Content  -->
         <div id="content">
             <div class="overlay">
@@ -52,7 +51,7 @@
                 <h1>Planning The Trip</h1>
             </div>-->
             <div class="row map-area">
-                <div class="col-sm-3 notebook">
+                <div class="col-sm-3 col-md-3 notebook">
                     <div id="itenary-list">
                         <div class="lines">
 
@@ -83,7 +82,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-8">
+                <div class="col-sm-5 col-md-6">
                     <div class="row map-div">
                         <div id="map"></div>
                         <!--<select id="type" onchange="filterMarkers(this.value);">
@@ -101,7 +100,15 @@
                         </select>-->
                     </div>
                 </div>
+                <div class="col-sm-3 col-md-2">
+                    <p>infoWindow To Display Here</p>
+                    <div id="infoDiv">
+                        
+                    </div>
+                </div>
             </div>
+
+
         </section>
 
         <section id="gallery-captions">
@@ -140,6 +147,7 @@
 
         </section>
 
+        <!--Work In Progress
         <Section id="accomodation">
             <div class="section-header">
                 <h1>Somewhere To Stay</h1>
@@ -205,8 +213,8 @@
                 </div>
             </div>
 
-        </Section>
-        
+        </Section>-->
+
         <!--Modals-->
         <!--Lough Key Modal -->
         <div class="modal hide" id="myModal">
@@ -358,8 +366,8 @@
                 </h1>
             </div>
         </section>
+    </main>
 
-    </div>
 
 
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>

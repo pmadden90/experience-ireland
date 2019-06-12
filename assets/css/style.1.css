@@ -1,9 +1,8 @@
 html,
 body {
   background-color: #FAFAFA;
-  margin:0px;
-  padding:0px;
-  
+  width: 100%;
+  overflow-x: hidden;
 }
 
 h2,
@@ -31,7 +30,7 @@ h4 {
   height: 20px;
 }
 #content {
-  width: 100%;
+  width: 100vw;
 }
 
 
@@ -242,8 +241,9 @@ mySlides {
 /*Sections*/
 
 #itenary-list {
+  margin-top: 20px;
   min-height: 55vh;
-  width: 100%;
+  width: 90%;
   display: inline-block;
 }
 
@@ -267,7 +267,7 @@ mySlides {
 }
 
 .local-storage {
-  margin-right: 0;
+  margin-right: -20px;
   margin-left: 0;
 }
 
@@ -297,7 +297,7 @@ mySlides {
   border-right: 1px solid #ffaa9f;
   width: 2px;
   float: left;
-  min-height: 70vh;
+  min-height: 75vh;
   margin-left: 30px;
   
 }
@@ -342,13 +342,6 @@ mySlides {
   margin: 10px;
   border: 3px solid #000;
 }
-
-.infoWindow-area {
-  margin-top: 10px;
-  width: 85%;
-}
-
-
 /*Gallery Area CSS*/
 
 .panel-wrappers {
@@ -699,7 +692,82 @@ h3 {
   text-align: center;
 }
 
-/**/
+/*Extra*/
+table {
+        font-size: 12px;
+      }
+      #map {
+        width: 100%;
+      }
+      #listing {
+        position: absolute;
+        width: 200px;
+        height: 470px;
+        overflow: auto;
+        left: 442px;
+        top: 0px;
+        cursor: pointer;
+        overflow-x: hidden;
+      }
+      #findhotels {
+        position: absolute;
+        text-align: right;
+        width: 100px;
+        font-size: 14px;
+        padding: 4px;
+        z-index: 5;
+        background-color: #fff;
+      }
+      #locationField {
+        position: absolute;
+        width: 190px;
+        height: 25px;
+        left: 108px;
+        top: 0px;
+        z-index: 5;
+        background-color: #fff;
+      }
+      #controls {
+        position: absolute;
+        left: 300px;
+        width: 140px;
+        top: 0px;
+        z-index: 5;
+        background-color: #fff;
+      }
+      #autocomplete {
+        width: 30%
+      }
+      #country {
+        width: 100%;
+      }
+      .placeIcon {
+        width: 20px;
+        height: 34px;
+        margin: 4px;
+      }
+      .hotelIcon {
+        width: 24px;
+        height: 24px;
+      }
+      #resultsTable {
+        border-collapse: collapse;
+        width: 240px;
+      }
+      #rating {
+        font-size: 15px;
+        font-family: Arial Unicode MS;
+      }
+      .iw_table_row {
+        height: 18px;
+      }
+      .iw_attribute_name {
+        font-weight: bold;
+        text-align: right;
+      }
+      .iw_table_icon {
+        text-align: right;
+      }
 
 /**/
 

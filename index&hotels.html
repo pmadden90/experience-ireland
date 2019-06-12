@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#50C878" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/media/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/media/icons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <title>Visit Ireland</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English|Irish+Grover|Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.1.css" type="text/css" />
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!-- Page Content  -->
+        <div id="content">
+            <div class="overlay">
+                <div class="row stw-header">
+                    <h1 data-heading="Experience Ireland">
+                        <span class="homepage-header">Experience Ireland</span>
+                        <br>
+                    </h1>
+                </div>
+                <div class="row search-bar">
+                    <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+                </div>
+            </div>
+            <div class="under-overlay">
+                <img class="mySlides" src="assets/media/carrick.jpg">
+                <img class="mySlides" src="assets/media/clew-bay.jpg">
+                <img class="mySlides" src="assets/media/knock-airport-view.jpg">
+                <img class="mySlides" src="assets/media/kylemore-abbey.jpg">
+                <img class="mySlides" src="assets/media/surf-west.jpg">
+                <img class="mySlides" src="assets/media/westport.jpg">
+            </div>
+        </div>
+
+        <section id="maps">
+            <!--<div class="section-header">
+                <h1>Planning The Trip</h1>
+            </div>-->
+            <div class="row map-area">
+                <div class="col-sm-3 notebook">
+                    <div id="itenary-list">
+                        <div class="lines">
+
+                        </div>
+                        <div class="row local-storage">
+                            <div class="wrapper">
+                                <h2>Places To Visit</h2>
+                                <p></p>
+                                <ul class="itenary">
+
+                                </ul>
+                                <form class="add-items">
+                                    <input type="text" class="itenary-input" name="item" placeholder="Create a wishlist" required>
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <input type="submit" class="btn btn-success btn-sm" value="+ Add Place/Activity">
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <input type="submit" class="btn btn-info btn-sm" value="Email List">
+                                            <form id="send_email" action="send_email.php">
+                                                <input id="content" type="hidden" name="content" />
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    
+                <div class="row map-div">
+                    <div id="map"></div>
+                </div>
+            </div>
+    </div>
+    
+    </section>
+
+    <section id="gallery-captions">
+        <div class="section-header">
+            <h1>Something For Everyone</h1>
+        </div>
+        <div class="panel-wrappers">
+            <div class="panels">
+                <div class="panel panel1">
+                    <p>Lough Key</p>
+                    <p>Activities</p>
+                    <p><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Find out more</button></p>
+                </div>
+                <div class="panel panel2">
+                    <p>Galway</p>
+                    <p>Culture</p>
+                    <p><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">Find out more</button></p>
+                </div>
+                <div class="panel panel3">
+                    <p>Achill</p>
+                    <p>Wilderness</p>
+                    <p><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal3">Find out more</button></p>
+                </div>
+                <div class="panel panel4">
+                    <p>Strandhill</p>
+                    <p>Relax</p>
+                    <p><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal4">Find out more</button></p>
+                </div>
+                <div class="panel panel5">
+                    <p>GAA</p>
+                    <p>Irish Sport</p>
+                    <p><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal5">Find out more</button></p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <Section id="accomodation">
+        <div class="section-header">
+            <h1>Somewhere To Stay</h1>
+        </div>
+        <div class="col-md-3">
+            <div class="card stream1">
+                <img class="card_image" src="assets/media/ashford-castle.jpg" alt="#">
+                <div class="card_bottom">
+                    <h2>Ashford Castle</h2>
+                    <ul style="display: none;">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <button class="bottom_button">Show</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card stream1">
+                <img class="card_image" src="#" alt="#">
+                <div class="card_bottom">
+                    <h2>Hotel</h2>
+                    <ul style="display: none;">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <button class="bottom_button">Show</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card stream1">
+                <img class="card_image" src="#" alt="#">
+                <div class="card_bottom">
+                    <h2>Hotel</h2>
+                    <ul style="display: none;">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <button class="bottom_button">Show</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card stream1">
+                <img class="card_image" src="#" alt="#">
+                <div class="card_bottom">
+                    <h2>Hotel</h2>
+                    <ul style="display: none;">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <button class="bottom_button">Show</button>
+                </div>
+            </div>
+        </div>
+
+    </Section>
+
+    <!--Modals-->
+    <!--Lough Key Modal -->
+    <div class="modal hide" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!--Lough Key Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Lough Key Forest Park</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Lough Key Modal body -->
+                <div class="modal-body">
+                    <p>Amazing activities to choose from here, including zip-lining, challenge rooms, cycling, boats or simply walking</p>
+                    <p>See some of what Lough Key Forest Park has to offer below</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2S6k9mNFdtg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <!--Lough Key Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Galway City Modal -->
+    <div class="modal hide" id="myModal2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <<!--Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Galway</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <p>Find out why Galway City was selected as the European Capital of Culture</p>
+                        <p>Is it the history? Is it the arts? Is it the people? The food? <em>The drink?</em> It's everything.</p>
+                        <p>Galway City is a city that can't be read about. It needs to be experienced. Check out a sample of the quality of performers on Shop Street! </p>
+                        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/69-m5BPa314" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Achill Island Modal -->
+    <div class="modal hide" id="myModal3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Achill Island</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <p>An island for those looking for something exciting, wild, something remote or even relaxing</p>
+                    <p>Achill Island has kayaking, surfing, cycling and hiking for those who want the thrills and spas and relaxation spaces for those who want to chill!</p>
+                    <p>Keem Beach is arguably one of the most picturesque places in Ireland and is not to be missed </p>
+                    <img class="modal-img" src="assets/media/croaghaun_cliff.jpg">
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Strandhill Modal -->
+    <div class="modal hide" id="myModal4">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Strandhill</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <p>Another hidden gem on the west coast of Ireland.</p>
+                    <p>In Strandhill you could hop off a surfboard and slip in to a seaweed bath in a matter of minutes. If you need to cool down, head to a cafe for some delicious homemade ice cream. </p>
+                    <p>From Strandhill, it's easy to reach Mullaghmore - one of the most famous surfing locations in the world! </p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/nKZvMHYsTfs" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- GAA Modal -->
+    <div class="modal hide" id="myModal5">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">GAA</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <p>Did you know Ireland is home to two unique sports that outdate sports such as soccer, American football, baseball, basketball and ice hockey?</p>
+                    <p>These two sports are called Gaelic football (which inspired Aussie Rules football) and hurling (which inspired ice hockey) </p>
+                    <p>These sports are fast paced, physically challenging and highly entertaining sports played in front of small or huge crowds (up to 80,000) and those that play are all amateur athletes. Check them out below</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ps3OgWXREiM" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/I1Vw66Zs0dQ" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <section id="bottom-header">
+        <div class="row stw-header">
+            <h1 data-heading="Don't just go to Ireland, experience Ireland">
+                <span class="homepage-header">Don't just go to Ireland.
+                    <br>Experience Ireland.</span>
+                <br>
+            </h1>
+        </div>
+    </section>
+
+    </div>
+
+
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!--<script src="assets/js/maps2.js"></script>-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYnUjZz_QaP44ljPHqccjeFCNFxHAFB6k&libraries=places&callback=initialize" async defer></script>
+    <script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/gallery.js"></script>
+    <script src="assets/js/itenary.js"></script>
+    <script src="assets/js/modals.js"></script>
+    <script src="assets/js/places2.js"></script>
+
+    <script>
+        var span = document.querySelector("span");
+
+        span.addEventListener("input", function() {
+            var text = this.innerText;
+            this.setAttribute("data-heading", text);
+            this.parentElement.setAttribute("data-heading", text);
+        });
+    </script>
+</body>
+
+</html>
