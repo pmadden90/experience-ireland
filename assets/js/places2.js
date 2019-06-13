@@ -233,18 +233,19 @@
       var service;
       var markers = [];
       
-      function initialize() {
+      function initAutocomplete() {
           var center = new google.maps.LatLng(53.9061, -8.8178);
           
           map = new google.maps.Map(document.getElementById('map'), {
               center: center,
-              zoom: 7
+              zoom: 7,
+              mapTypeId: google.maps.MapTypeId.TERRAIN
           });
           
           request = {
               location: center,
-              radius: 80467.2,
-              types: ['point_of_interest']
+              radius: 30000,
+              types: ['museum']
       };
       
       infoWindow = new google.maps.InfoWindow();
@@ -259,8 +260,8 @@
           
           var request = {
               location: event.latLng,
-              radius: 80467.2, //50 miles radius
-              types: ['lodging'] //does this show lodging once map moves?
+              radius: 30000, // distance in meters
+              types: ['art_gallery'] //
           };
           service.nearbySearch(request, callback);
       });
@@ -278,15 +279,18 @@
           var placeLoc = place.geometry.location;
           var marker = new google.maps.Marker({
               map:map,
-              position: place.geometry.location
+              position: place.geometry.location //,
+              //placeId: results[0].place_id
           });
           
           google.maps.event.addListener(marker, 'click', function(){
               infoWindow.setContent(place.name);
               infoWindow.open(map, this);
+              document.getElementById('infoDiv').innerHTML = content;
           });
           return marker;
       }
+     
       
       function clearResults (markers) {
           for (var m in markers) {
@@ -295,4 +299,13 @@
           markers =[]
       }
       
-      google.maps.event.addDomListener(window, 'load', initialize);
+      google.maps.event.addDomListener(window, 'load', initAutocomplete);
+      
+      jQuery(document).ready(function() {    
+      $("#infoDiv").googlePlaces({       
+         placeId: '[ChIJi2EO4p1dWUgRaheI6Po8Pgk]',         
+         render: ['reviews'],       
+         min_rating: 3,         
+         max_rows: 0     
+       });
+   });

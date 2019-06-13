@@ -47,51 +47,56 @@
             </div>
         </div>
 
-        <section id="maps">
-            <!--<div class="section-header">
+<section id="maps">
+    <!--<div class="section-header">
                 <h1>Planning The Trip</h1>
             </div>-->
-            <div class="row map-area">
-                <div class="col-sm-3 notebook">
-                    <div id="itenary-list">
-                        <div class="lines">
+    <div class="row map-area">
+        <div class="col-sm-3 notebook">
+            <div id="itenary-list">
+                <div class="lines">
 
-                        </div>
-                        <div class="row local-storage">
-                            <div class="wrapper">
-                                <h2>Places To Visit</h2>
-                                <p></p>
-                                <ul class="itenary">
+                </div>
+                <div class="row local-storage">
+                    <div class="wrapper">
+                        <h2>Places To Visit</h2>
+                        <p></p>
+                        <ul class="itenary">
 
-                                </ul>
-                                <form class="add-items">
-                                    <input type="text" class="itenary-input" name="item" placeholder="Create a wishlist" required>
-                                    <div class="row">
-                                        <div class="col-xs-3">
-                                            <input type="submit" class="btn btn-success btn-sm" value="+ Add Place/Activity">
-                                        </div>
-                                        <div class="col-xs-3">
-                                            <input type="submit" class="btn btn-info btn-sm" value="Email List">
-                                            <form id="send_email" action="send_email.php">
-                                                <input id="content" type="hidden" name="content" />
-                                            </form>
-                                        </div>
+                        </ul>
+                        <form class="add-items">
+                            <input type="text" class="itenary-input" name="item" placeholder="Create a wishlist" required>
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <input type="submit" class="btn btn-success btn-sm" value="+ Add Place/Activity">
+                                </div>
+                                <div class="col-xs-3">
+                                    <input type="submit" class="btn btn-info btn-sm" value="Email List">
+                                    <form id="send_email" action="send_email.php">
+                                        <input id="content" type="hidden" name="content" />
+                                    </form>
+                                </div>
 
-                                    </div>
-                                </form>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
-                <div class="col-sm-8">
-                    
-                <div class="row map-div">
-                    <div id="map"></div>
-                </div>
             </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="row map-div">
+                <div id="map"></div>
+            </div>
+        </div>
+        <div class="col-sm-2 col-md-2">
+                    <p>infoWindow To Display Here</p>
+                    <div id="infoDiv">
+                        <p></p>
+                    </div>
+                </div>
     </div>
-    
-    </section>
+
+</section>
 
     <section id="gallery-captions">
         <div class="section-header">
@@ -356,7 +361,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!--<script src="assets/js/maps2.js"></script>-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYnUjZz_QaP44ljPHqccjeFCNFxHAFB6k&libraries=places&callback=initialize" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYnUjZz_QaP44ljPHqccjeFCNFxHAFB6k&libraries=places&callback=initAutocomplete" async defer></script>
     <script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
