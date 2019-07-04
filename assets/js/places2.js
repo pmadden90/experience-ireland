@@ -90,7 +90,7 @@ function onPlaceChanged() {
   var place = autocomplete.getPlace();
   if (place.geometry) {
     map.panTo(place.geometry.location);
-    map.setZoom(11);
+    map.setZoom(12);
     search();
   } else {
     document.getElementById('autocomplete').placeholder = 'Enter a town or city';

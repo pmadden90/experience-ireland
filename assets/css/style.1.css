@@ -769,6 +769,10 @@ table {
         text-align: right;
       }
 
+#localHotels {
+  overflow-y: scroll;
+  height: 75vh;
+}
 /**/
 
 /**/
