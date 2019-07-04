@@ -160,7 +160,7 @@ filterMarkers = function (category) {
           mapTypeId: google.maps.MapTypeId.TERRAIN
         });
 
-        /*var request = {
+        var request = {
           location: 'center',
           radius: 5076,
           types: ['bar', 'restaurant', 'lodging', 'natural_feature', 'activities', 'cities']
@@ -185,16 +185,7 @@ filterMarkers = function (category) {
             position: place.geometry.location
           });
         }
-        */
         
-        //Display infoWindow in seperate div
-        google.maps.event.addListener(marker, 'click', (function(i) {
-      return function() {
-        // infowindow.setContent(locations[i].info);
-        // infowindow.open(map, marker);
-        document.getElementById('infoDiv').innerHTML = locations[i].info;
-      }
-    })(i));
 
         // Create the search box and link it to the UI element.
         var input = document.getElementById('pac-input');
@@ -215,6 +206,8 @@ filterMarkers = function (category) {
           if (places.length == 0) {
             return;
           }
+          
+          
 
           // Clear out the old markers.
           markers.forEach(function(marker) {
@@ -242,7 +235,8 @@ filterMarkers = function (category) {
               map: map,
               icon: icon,
               title: place.name,
-              position: place.geometry.location
+              position: place.geometry.location,
+              photo: photo
             }));
 
             if (place.geometry.viewport) {
