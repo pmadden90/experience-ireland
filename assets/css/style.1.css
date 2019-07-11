@@ -164,6 +164,7 @@ mySlides {
 .search-bar {
   text-align: center;
   margin-top: 10px;
+  font-family: 'Permanent Marker', cursive;
 }
 
 #description {
@@ -185,7 +186,7 @@ mySlides {
       }
 
       .pac-card {
-        margin: 10px 10px 0 0;
+        margin: 10px 10px 0 -10px;
         border-radius: 2px 0 0 2px;
         box-sizing: border-box;
         -moz-box-sizing: border-box;
@@ -193,21 +194,23 @@ mySlides {
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
         background-color: #fff;
         font-family: 'Permanent Marker', cursive;
+        height: 35vh;
+        width: 100%;
       }
 
       #pac-container {
-        padding-bottom: 12px;
+        padding-bottom: 2px;
         margin-right: 12px;
       }
 
       .pac-controls {
         display: inline-block;
-        padding: 5px 11px;
+        padding: 0px 5px;
       }
 
       .pac-controls label {
         font-family: 'Permanent Marker', cursive;
-        font-size: 13px;
+        font-size: 11px;
         font-weight: 300;
       }
 
@@ -215,12 +218,12 @@ mySlides {
         background-color: #fff;
         color: black;
         font-family: 'Permanent Marker', cursive;
-        font-size: 15px;
+        font-size: 11px;
         font-weight: 300;
-        margin-left: 12px;
-        padding: 0 11px 0 13px;
+        margin-left: 5px;
+        padding: 0 5px 0 5px;
         text-overflow: ellipsis;
-        width: 400px;
+        width: 90%;
       }
 
       #pac-input:focus {
@@ -229,13 +232,13 @@ mySlides {
 
       #title {
         color: #fff;
-        background-color: #4d90fe;
-        font-size: 25px;
+        background-color: #50C878;
+        font-size: 20px;
         font-weight: 500;
         padding: 6px 12px;
       }
       #target {
-        width: 345px;
+        width: 100%;
       }
 
 /*Sections*/
@@ -782,7 +785,9 @@ table {
 
 #localHotels {
   overflow-y: scroll;
-  height: 75vh;
+  height: 40vh;
+  margin-top: 12px;
+  padding-top: 2px;
 }
 /**/
 

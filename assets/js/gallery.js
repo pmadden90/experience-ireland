@@ -1,7 +1,7 @@
 const panels = document.querySelectorAll('.panel');
   
   function toggleOpen() {
-      console.log('Mayo');
+      console.log('widen photo');
       this.classList.toggle('open');
   }
   

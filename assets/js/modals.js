@@ -26,11 +26,12 @@ $('#myModal5').on('show', function () {
 });
 $('#myModal5').on('hide', function () {
   $('modal-body').html('');  
-});*/
+});
 
 $('#myModal2').on('hide.modal', function(e) {    
     var $if = $(e.delegateTarget).find('iframe');
     var src = $if.attr("src");
     $if.attr("src", '/empty.html');
     $if.attr("src", src);
-});
+});*/
+
