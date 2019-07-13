@@ -61,10 +61,16 @@ function initMap() {
     zoomControl: false,
     streetViewControl: false
   });
+  
 
-  infoWindow = new google.maps.InfoWindow({
-    content: document.getElementById('info-content')
-  });
+ infowindow = new google.maps.InfoWindow({
+          content: '<div><strong>' + place.name + '</strong><br>' + 'Place ID: ' + place.place_id + '<br>' + place.formatted_address + '</div>' + '<div style="border-top: 1px solid rgb(204, 204, 204); margin-top: 9px; padding: 6px; font-size: 13px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; font-family: Roboto, Arial;"><a href="' + place.url + '" target="_blank" rel="noopener" style="cursor: pointer; color: rgb(66, 127, 237); text-decoration: none;">View on Google Maps</a></div>'+
+          '<div>API version '+google.maps.version+'</div>'
+        });
+
+ // infoWindow = new google.maps.InfoWindow({
+   // content: document.getElementById('info-content')
+  //});
 
   // Create the autocomplete object and associate it with the UI input control.
   // Restrict the search to the default country, and to place type "cities".

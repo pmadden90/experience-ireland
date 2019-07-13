@@ -62,6 +62,3 @@ $(document).ready(function() {
 		$(".card:not(highlight)").hide();
 	});
 	
-var video = $("#youtubeVideo").attr("src");
-$("#youtubeVideo").attr("src","");
-$("#youtubeVideo").attr("src",video);

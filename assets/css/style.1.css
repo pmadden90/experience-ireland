@@ -206,6 +206,8 @@ mySlides {
       .pac-controls {
         display: inline-block;
         padding: 0px 5px;
+        height: auto;
+        object-fit: contain;
       }
 
       .pac-controls label {
@@ -787,7 +789,7 @@ table {
   overflow-y: scroll;
   height: 40vh;
   margin-top: 12px;
-  padding-top: 2px;
+  
 }
 /**/
 
