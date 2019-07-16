@@ -37,22 +37,12 @@
                     <!-- <input id="pac-input" class="controls" type="text" placeholder="Search Box">-->
                     <div class="hotel-search">
                         <div id="locationField">
-                            <input id="autocomplete" placeholder="Enter a town or city" type="text" />
+                            <div id="pac-container">
+                                <input id="pac-input" type="text" placeholder="Enter a location">
+                            </div>
+                            <!--<input id="autocomplete" placeholder="Enter a town or city" type="text" />-->
                         </div>
 
-                        <!--<div id="controls">
-                            <select id="category">
-                              <option value="all">All</option>
-                              <option value="acc">Accomodation</option>
-                              <option value="caf">Cafe</option>
-                              <option value="int" selected>Interesting Places</option>
-                              <option value="nat">Natural Features</option>
-                              <option value="par">Park</option>
-                              <option value="pub">Pub</option>
-                              <option value="res">Restaurant</option>
-      
-                            </select>
-                        </div>-->
                     </div>
                 </div>
             </div>
@@ -72,9 +62,45 @@
         </div>
 
         <section id="maps">
-            <!--<div class="section-header">
-                <h1>Planning The Trip</h1>
-            </div>-->
+           
+            <div class="row">
+                <div class="col-xs-12 search-filter">
+                    <div class="pac-card" id="pac-card">
+                    <div>
+                        <div id="title">
+                            Finetuning Your Search
+                        </div>
+                        <div id="type-selector" class="pac-controls row">
+                            <div class="col-xs-2">
+                                <input type="radio" name="type" id="changetype-all" checked="checked">
+                                <label for="changetype-all">All</label>
+                            </div>
+                            <div class="col-xs-2">
+                                <input type="radio" name="type" id="changetype-establishment">
+                                <label for="changetype-establishment">Establishments</label>
+                            </div>
+                            <div class="col-xs-2">
+                                <input type="radio" name="type" id="changetype-address">
+                                <label for="changetype-address">Addresses</label>
+                            </div>
+                            <div class="col-xs-2">
+                                <input type="radio" name="type" id="changetype-geocode">
+                                <label for="changetype-geocode">Geocodes</label>
+                            </div>
+                            
+                        </div>
+                        <div id="strict-bounds-selector" class="pac-controls row">
+                            <div class="col-xs-2">
+                                <input type="checkbox" id="use-strict-bounds" value="">
+                                <label for="use-strict-bounds">Strict Bounds</label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                </div>
+                
+            </div>
             <div class="row map-area">
                 <div class="col-sm-3 notebook">
                     <div id="itenary-list">
@@ -91,15 +117,15 @@
                                 <form class="add-items">
                                     <input type="text" class="itenary-input" name="item" placeholder="Create a wishlist" required>
                                     <div class="row">
-                                        <div class="col-xs-4">
+                                        <div class="col-xs-9">
                                             <input type="submit" class="btn btn-success btn-md" value="+ Add To List">
                                         </div>
-                                        <div class="col-xs-4">
+                                        <!--<div class="col-xs-4">
                                             <input type="submit" class="btn btn-info btn-md" value="Email List">
                                             <form id="send_email" action="send_email.php">
                                                 <input id="content" type="hidden" name="content" />
                                             </form>
-                                        </div>
+                                        </div>-->
 
                                     </div>
                                 </form>
@@ -109,38 +135,12 @@
                 </div>
                 <div class="col-sm-6">
                     <div class="row map-div">
-                        
+
                         <div id="map"></div>
                     </div>
                 </div>
                 <div class="col-sm-2 col-md-2">
-                    <div class="pac-card" id="pac-card">
-                            <div>
-                                <div id="title">
-                                    Autocomplete search
-                                </div>
-                                <div id="type-selector" class="pac-controls">
-                                    <input type="radio" name="type" id="changetype-all" checked="checked">
-                                    <label for="changetype-all">All</label>
 
-                                    <input type="radio" name="type" id="changetype-establishment">
-                                    <label for="changetype-establishment">Establishments</label>
-
-                                    <input type="radio" name="type" id="changetype-address">
-                                    <label for="changetype-address">Addresses</label>
-
-                                    <input type="radio" name="type" id="changetype-geocode">
-                                    <label for="changetype-geocode">Geocodes</label>
-                                </div>
-                                <div id="strict-bounds-selector" class="pac-controls">
-                                    <input type="checkbox" id="use-strict-bounds" value="">
-                                    <label for="use-strict-bounds">Strict Bounds</label>
-                                </div>
-                            </div>
-                            <div id="pac-container">
-                                <input id="pac-input" type="text" placeholder="Enter a location">
-                            </div>
-                        </div>
                     <div id="listing">
                         <table id="resultsTable">
                             <tbody id="results"></tbody>
@@ -499,7 +499,7 @@
     <script src="assets/js/itenary.js"></script>
     <script src="assets/js/modals.js"></script>
     <script src="assets/js/places2.js"></script>
-    <!--<script src="assets/js/autocomplete.js"></script>-->
+    <script src="assets/js/autocomplete.js"></script>
 
     <script>
         var span = document.querySelector("span");
@@ -509,7 +509,7 @@
             this.parentElement.setAttribute("data-heading", text);
         });
     </script>
-    
+
 </body>
 
 </html>
