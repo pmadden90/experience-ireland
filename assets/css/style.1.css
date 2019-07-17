@@ -993,6 +993,81 @@ iframe #youtube {
   -webkit-transform: translate(0%, 0%);
 }
 
+/*Social Media Section*/
+/*--Social Media/Follow Us Section*/
+
+.social-links {
+        font-size: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        background-color: white;
+        width: auto;
+        display: inline-block;
+    }
+
+
+.social-media {
+    background-color: #FFFFFF;
+}
+
+.wrapper-sm {
+    background-color: #FFFFFF;
+    height: 500px;
+}
+
+.tablet-sm-btns a {
+    text-align: justify;
+    padding: 5px;
+}
+
+.social-media-header {
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.phone-sm-btns {
+    font-size: 30px;
+    padding: 5px;
+    text-align: center;
+}
+
+.spotify {
+    color: #1db954;
+    font-size: 18px;
+
+}
+
+.facebook {
+    color: #3b5998;
+}
+
+.apple {
+    color: #000000;
+}
+
+.instagram {
+    color: #c13584;
+}
+
+.amazon {
+    color: #ff9900;
+}
+
+.snapchat {
+    color: #fffc00;
+}
+
+.youtube {
+    color: #ff0000;
+}
+
+.twitter {
+    color: #1da1f2;
+}
+
+
 /*Media Queries*/
 /* Large desktop */
 
@@ -1006,7 +1081,7 @@ iframe #youtube {
 
 @media (min-width: 768px) and (max-width: 1199px) {
     .pac-card {
-      height: 30vh;
+      height: 25vh;
     }
 
     .pac-controls input {
