@@ -1,37 +1,71 @@
-/*$('#myModal').on('show', function () {
-  $('modal-body').html('<iframe width="560" height="315" src="https://www.youtube.com/embed/2S6k9mNFdtg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');  
-});
-$('#myModal').on('hide', function () {
-  $('modal-body').html('');  
-});
-
-$('#myModal2').on('show', function () {
-  $('modal-body2').html('<iframe width="560" height="315" src="https://www.youtube.com/embed/69-m5BPa314" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');  
-});
-$('#myModal2').on('hide', function () {
-  $('modal-body').html('');  
-});
+$(document).ready(function() {
 
 
-$('#myModal4').on('show', function () {
-  $('modal-body').html('<iframe width="560" height="315" src="https://www.youtube.com/embed/nKZvMHYsTfs" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');  
-});
-$('#myModal4').on('hide', function () {
-  $('modal-body').html('');  
-});
+  /* Toggle Video Modal
+  -----------------------------------------*/
+  function toggle_video_modal() {
 
-$('#myModal5').on('show', function () {
-  $('modal-body').html('<iframe width="560" height="315" src="https://www.youtube.com/embed/ps3OgWXREiM" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-                        + '<iframe width="560" height="315" src="https://www.youtube.com/embed/I1Vw66Zs0dQ" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');  
-});
-$('#myModal5').on('hide', function () {
-  $('modal-body').html('');  
-});
+    // Click on video thumbnail or link
+    $(".js-trigger-video-modal").on("click", function(e) {
 
-$('#myModal2').on('hide.modal', function(e) {    
-    var $if = $(e.delegateTarget).find('iframe');
-    var src = $if.attr("src");
-    $if.attr("src", '/empty.html');
-    $if.attr("src", src);
-});*/
+      // prevent default behavior for a-tags, button tags, etc. 
+      e.preventDefault();
 
+      // Grab the video ID from the element clicked
+      var id = $(this).attr('data-youtube-id');
+
+      // Autoplay when the modal appears
+      // Note: this is intetnionally disabled on most mobile devices
+      // If critical on mobile, then some alternate method is needed
+      var autoplay = '?autoplay=1';
+
+      // Don't show the 'Related Videos' view when the video ends
+      var related_no = '&rel=0';
+
+      // String the ID and param variables together
+      var src = '//www.youtube.com/embed/' + id + autoplay + related_no;
+
+      // Pass the YouTube video ID into the iframe template...
+      // Set the source on the iframe to match the video ID
+      $("#player").attr('src', src);
+
+      // Add class to the body to visually reveal the modal
+      $("body").addClass("show-video-modal noscroll");
+
+    });
+
+    // Close and Reset the Video Modal
+    function close_video_modal() {
+
+      event.preventDefault();
+
+      // re-hide the video modal
+      $("body").removeClass("show-video-modal noscroll");
+
+      // reset the source attribute for the iframe template, kills the video
+      $("#player").attr('src', '');
+
+    }
+    // if the 'close' button/element, or the overlay are clicked 
+    $('body').on('click', '.close-video-modal, .video-modal .overlay', function(event) {
+
+      // call the close and reset function
+      close_video_modal();
+
+    });
+    // if the ESC key is tapped
+    $('body').keyup(function(e) {
+      // ESC key maps to keycode `27`
+      if (e.keyCode == 27) {
+
+        // call the close and reset function
+        close_video_modal();
+
+      }
+    });
+  }
+  toggle_video_modal();
+
+
+
+});

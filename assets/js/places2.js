@@ -10,46 +10,46 @@
 var map, places, infoWindow;
 var markers = [];
 var autocomplete;
-var countryRestrict = {'country': 'ie'};
+var countryRestrict = { 'country': 'ie' };
 var MARKER_PATH = 'https://developers.google.com/maps/documentation/javascript/images/marker_green';
 var hostnameRegexp = new RegExp('^https?://.+?/');
 
 var countries = {
   'ie': {
-    center: {lat: 53.425, lng: -7.943},
+    center: { lat: 53.425, lng: -7.943 },
     zoom: 6.65
   }
 };
 
 var category = {
-'acc': {
-bounds: map.getBounds(),
-types: ['lodging']
-	}, 
-'caf': {
-bounds: map.getBounds(),
-types: ['cafe']
-	},
+  'acc': {
+    bounds: map.getBounds(),
+    types: ['lodging']
+  }/*,
+  'caf': {
+    bounds: map.getBounds(),
+    types: ['cafe']
+  },
   'int': {
-bounds: map.getBounds(),
-types: ['point_of_interest']
-	}, 
-'nat': {
-bounds: map.getBounds(),
-types: ['natural_features']
-	},
+    bounds: map.getBounds(),
+    types: ['point_of_interest']
+  },
+  'nat': {
+    bounds: map.getBounds(),
+    types: ['natural_features']
+  },
   'par': {
-bounds: map.getBounds(),
-types: ['park']
-	},
-'pub': {
-bounds: map.getBounds(),
-types: ['bar']
-	}, 
-'res': {
-bounds: map.getBounds(),
-types: ['restaurant']
-	}
+    bounds: map.getBounds(),
+    types: ['park']
+  },
+  'pub': {
+    bounds: map.getBounds(),
+    types: ['bar']
+  },
+  'res': {
+    bounds: map.getBounds(),
+    types: ['restaurant']
+  }*/
 };
 
 function initMap() {
@@ -61,32 +61,33 @@ function initMap() {
     zoomControl: false,
     streetViewControl: false
   });
-  
 
- infowindow = new google.maps.InfoWindow({
-          content: '<div><strong>' + place.name + '</strong><br>' + 'Place ID: ' + place.place_id + '<br>' + place.formatted_address + '</div>' + '<div style="border-top: 1px solid rgb(204, 204, 204); margin-top: 9px; padding: 6px; font-size: 13px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; font-family: Roboto, Arial;"><a href="' + place.url + '" target="_blank" rel="noopener" style="cursor: pointer; color: rgb(66, 127, 237); text-decoration: none;">View on Google Maps</a></div>'+
-          '<div>API version '+google.maps.version+'</div>'
-        });
 
- // infoWindow = new google.maps.InfoWindow({
-   // content: document.getElementById('info-content')
+  infowindow = new google.maps.InfoWindow({
+    content: '<div><strong>' + place.name + '</strong><br>' + 'Place ID: ' + place.place_id + '<br>' + type + 'br' + place.formatted_address + '</div>' + '<div style="border-top: 1px solid rgb(204, 204, 204); margin-top: 9px; padding: 6px; font-size: 13px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; font-family: Roboto, Arial;"><a href="' + place.url + '" target="_blank" rel="noopener" style="cursor: pointer; color: rgb(66, 127, 237); text-decoration: none;">View on Google Maps</a></div>' +
+      '<div>API version ' + google.maps.version + '</div>'
+  });
+
+  // infoWindow = new google.maps.InfoWindow({
+  // content: document.getElementById('info-content')
   //});
 
   // Create the autocomplete object and associate it with the UI input control.
   // Restrict the search to the default country, and to place type "cities".
   autocomplete = new google.maps.places.Autocomplete(
-      /** @type {!HTMLInputElement} */ (
-          document.getElementById('autocomplete')), {
-        types: ['(cities)'],
-        componentRestrictions: countryRestrict
-      });
+    /** @type {!HTMLInputElement} */
+    (
+      document.getElementById('autocomplete')), {
+      types: ['(cities)'],
+      componentRestrictions: countryRestrict
+    });
   places = new google.maps.places.PlacesService(map);
 
   autocomplete.addListener('place_changed', onPlaceChanged);
 
   // Add a DOM event listener to react when the user selects a country.
   document.getElementById('country').addEventListener(
-      'change', setAutocompleteCountry);
+    'change', setAutocompleteCountry);
 }
 
 // When the user selects a city, get the place details for the city and
@@ -97,7 +98,8 @@ function onPlaceChanged() {
     map.panTo(place.geometry.location);
     map.setZoom(12);
     search();
-  } else {
+  }
+  else {
     document.getElementById('autocomplete').placeholder = 'Enter a town or city';
   }
 }
@@ -108,11 +110,11 @@ function search() {
     bounds: map.getBounds(),
     types: ['lodging']
   };
-  
+
   //var poiSearch = {
- // bounds: map.getBounds(),
- // types: ['point_of_interest']
- // };
+  // bounds: map.getBounds(),
+  // types: ['point_of_interest']
+  // };
 
   places.nearbySearch(hotelSearch, function(results, status) {
     if (status === google.maps.places.PlacesServiceStatus.OK) {
@@ -138,7 +140,7 @@ function search() {
       }
     }
   });
-  
+
 }
 
 function clearMarkers() {
@@ -155,11 +157,12 @@ function clearMarkers() {
 function setAutocompleteCountry() {
   var categories = document.getElementById('category').value;
   if (category == 'all') {
-    autocomplete.setComponentRestrictions({'category': []});
-    map.setCenter({lat: 13, lng: 0});
+    autocomplete.setComponentRestrictions({ 'category': [] });
+    map.setCenter({ lat: 13, lng: 0 });
     map.setZoom(2);
-  } else {
-    autocomplete.setComponentRestrictions({'categories': category});
+  }
+  else {
+    autocomplete.setComponentRestrictions({ 'categories': category });
     map.setCenter(categories[category].center);
     map.setZoom(categories[category].zoom);
   }
@@ -210,29 +213,30 @@ function clearResults() {
 // anchored on the marker for the hotel that the user selected.
 function showInfoWindow() {
   var marker = this;
-  places.getDetails({placeId: marker.placeResult.place_id},
-      function(place, status) {
-        if (status !== google.maps.places.PlacesServiceStatus.OK) {
-          return;
-        }
-        infoWindow.open(map, marker);
-        buildIWContent(place);
-      });
+  places.getDetails({ placeId: marker.placeResult.place_id },
+    function(place, status) {
+      if (status !== google.maps.places.PlacesServiceStatus.OK) {
+        return;
+      }
+      infoWindow.open(map, marker);
+      buildIWContent(place);
+    });
 }
 
 // Load the place information into the HTML elements used by the info window.
 function buildIWContent(place) {
   document.getElementById('iw-icon').innerHTML = '<img class="hotelIcon" ' +
-      'src="' + place.icon + '"/>';
+    'src="' + place.icon + '"/>';
   document.getElementById('iw-url').innerHTML = '<b><a href="' + place.url +
-      '">' + place.name + '</a></b>';
+    '">' + place.name + '</a></b>';
   document.getElementById('iw-address').textContent = place.vicinity;
 
   if (place.formatted_phone_number) {
     document.getElementById('iw-phone-row').style.display = '';
     document.getElementById('iw-phone').textContent =
-        place.formatted_phone_number;
-  } else {
+      place.formatted_phone_number;
+  }
+  else {
     document.getElementById('iw-phone-row').style.display = 'none';
   }
 
@@ -244,13 +248,15 @@ function buildIWContent(place) {
     for (var i = 0; i < 5; i++) {
       if (place.rating < (i + 0.5)) {
         ratingHtml += '&#10025;';
-      } else {
+      }
+      else {
         ratingHtml += '&#10029;';
       }
-    document.getElementById('iw-rating-row').style.display = '';
-    document.getElementById('iw-rating').innerHTML = ratingHtml;
+      document.getElementById('iw-rating-row').style.display = '';
+      document.getElementById('iw-rating').innerHTML = ratingHtml;
     }
-  } else {
+  }
+  else {
     document.getElementById('iw-rating-row').style.display = 'none';
   }
 
@@ -265,8 +271,8 @@ function buildIWContent(place) {
     }
     document.getElementById('iw-website-row').style.display = '';
     document.getElementById('iw-website').textContent = website;
-  } else {
+  }
+  else {
     document.getElementById('iw-website-row').style.display = 'none';
   }
 }
-

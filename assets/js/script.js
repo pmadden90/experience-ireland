@@ -43,22 +43,21 @@ $(document).ready(function() {
 });*/
 
 
-	// Toggle the visibility of the paragraph when a button is clicked 
-	$("button").click(function(){
-		$(this).prev().slideToggle('fast');
-	});
-	
-	 
-	$("img").click(function(){
-		$(this).next().children("p").slideDown();
-	});
-	
+// Toggle the visibility of the paragraph when a button is clicked 
+$("button").click(function() {
+    $(this).prev().slideToggle('fast');
+});
 
-	$("#all_btn").click(function(){
-		$(".card").show();
-	});
-	
-	$("#select_btn").click(function(){
-		$(".card:not(highlight)").hide();
-	});
-	
+
+$("img").click(function() {
+    $(this).next().children("p").slideDown();
+});
+
+
+$("#all_btn").click(function() {
+    $(".card").show();
+});
+
+$("#select_btn").click(function() {
+    $(".card:not(highlight)").hide();
+});
