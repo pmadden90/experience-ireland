@@ -52,7 +52,8 @@ The main section of the page will change but I aim to stick to the maroon
 and grey color schemes.
 
 
-<h3>Skeleton Plane</h3> <h4>How will our information be represented and how will
+<h3>Skeleton Plane</h3> 
+<h4>How will our information be represented and how will
 the user navigate to the information and the features?</h4> 
 I decided that I would create four boxes on each page, one for each of the four 
 types of information.
