@@ -41,6 +41,16 @@
                             <div id="pac-container">
                                 <input id="pac-input" type="text" placeholder="Enter a location">
                             </div>
+                            <div class="pac-card" id="pac-card">
+                                <div>
+                                    <div id="type-selector" class="pac-controls row">
+                                        <div id="strict-bounds-selector" class="pac-controls row">
+                                            <input type="checkbox" id="use-strict-bounds" value="">
+                                        </div>
+                                        <label for="use-strict-bounds">Restrict search to map view</label>
+                                    </div>
+                                </div>
+                            </div>
                             <!--<input id="autocomplete" placeholder="Enter a town or city" type="text" />-->
                         </div>
 
@@ -52,12 +62,9 @@
                 <img class="mySlides" src="assets/media/cliffs-of-moher.jpg">
                 <img class="mySlides" src="assets/media/connemara-panorama.jpg">
                 <img class="mySlides" src="assets/media/ireland-panorama.jpg">
-                
                 <img class="mySlides" src="assets/media/wild-atlantic-road.jpg">
                 <img class="mySlides" src="assets/media/keem-bay.jpg">
-                
                 <img class="mySlides" src="assets/media/newgrange.jpg">
-                
                 <img class="mySlides" src="assets/media/strandhill-sligo.jpg">
             </div>
         </div>
@@ -96,60 +103,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-8">
                     <div class="row map-div">
-            
+                        <p><em>Click on any marker to learn more</em></p>
                         <div id="map"></div>
                     </div>
                 </div>
-                <div class="col-sm-2 col-md-2">
-                    <div class="row">
-                        <div class="col-xs-12 search-filter">
-                            <div class="pac-card" id="pac-card">
-                                <div>
-                                    <div id="title">
-                                        Finetuning Your Search
-                                    </div>
-                                    <div id="type-selector" class="pac-controls row">
-                                        <table style="width:100%">
-                                            <tr>
-                                                <td><input type="radio" name="type" id="changetype-all" checked="checked"></td>
-                                                <td><label for="changetype-all">All</label></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="radio" name="type" id="changetype-establishment"></td>
-                                                <td><label for="changetype-establishment">Establishments</label></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="radio" name="type" id="changetype-address"></td>
-                                                <td><label for="changetype-address">Addresses</label></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="radio" name="type" id="changetype-geocode"></td>
-                                                <td><label for="changetype-geocode">Geocodes</label></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div id="strict-bounds-selector" class="pac-controls row">
-                                                        <input type="checkbox" id="use-strict-bounds" value="">
-                                                    </div>
-                                                </td>
-                                                <td><label for="use-strict-bounds">Strict Bounds</label></td>
-                                            </tr>
-                                        </table>
-            
-            
-            
-                                    </div>
-            
-                                </div>
-            
-                            </div>
-            
-                        </div>
-                    </div>
-            
-                </div>
+                
                <!-- <div class="hotel-search">
                     <div id="locationField">
                         <div id="pac-container">
@@ -159,6 +119,25 @@
                 </div>-->
             
             
+                
+            </div>
+            </div>
+
+        </section>
+        <section id="basedOnMap">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="pointsOfInterest"></div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="gallery-captions">
+            <div class="section-header">
+                <h1>Something For Everyone</h1>
+            </div>
+            <div class="recommend-places">
                 <div id="listing">
                     <table id="resultsTable">
                         <tbody id="results"></tbody>
@@ -231,22 +210,6 @@
                 <div id="infoDiv">
                     <p></p>
                 </div>
-            </div>
-            </div>
-
-        </section>
-        <section id="basedOnMap">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="pointsOfInterest"></div>
-                </div>
-            </div>
-
-        </section>
-
-        <section id="gallery-captions">
-            <div class="section-header">
-                <h1>Something For Everyone</h1>
             </div>
             
 
@@ -375,10 +338,10 @@
     <script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <!--<script type="text/javascript" src="http://www.youtube.com/player_api"></script>-->
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/gallery.js"></script>
-    <script src="assets/js/itenary.js"></script>
-    <script src="assets/js/modals.js"></script>
+    <!--<script src="assets/js/script.js"></script>-->
+    <!--<script src="assets/js/gallery.js"></script>-->
+    <!--<script src="assets/js/itenary.js"></script>-->
+    <!--<script src="assets/js/modals.js"></script>-->
     <script src="assets/js/places2.js"></script>
     <script src="assets/js/autocomplete.js"></script>
 

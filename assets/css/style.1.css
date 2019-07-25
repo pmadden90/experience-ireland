@@ -206,8 +206,10 @@ mySlides {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
   background-color: #fff;
   font-family: 'Permanent Marker', cursive;
-  height: 15vh;
-  width: 100%;
+  height: 7vh;
+  width: 340px;
+  margin-left: 0px;
+  display: inline-block;
   overflow: hidden;
   white-space: nowrap;
 }
@@ -215,6 +217,8 @@ mySlides {
 #pac-container {
   padding-bottom: 2px;
   margin-right: 2px;
+  width: 350px;
+  height: 60px;
 }
 
 .pac-controls {
@@ -246,8 +250,8 @@ mySlides {
   margin-left: 0px;
   padding: 0px 10px 0 10px;
   text-overflow: ellipsis;
-  width: 90%;
-  height: 30px;
+  width: 85%;
+  height: 55px;
   margin-top: 3px;
 }
 
@@ -385,6 +389,9 @@ mySlides {
   height: 50vh;
 }
 
+.recommend-places {
+  
+}
 /*Gallery Area CSS*/
 
 .panel-wrappers {
@@ -769,8 +776,8 @@ table {
 
 #locationField {
   /*position: absolute;*/
-  width: 300px;
-  height: 40px;
+  width: 340px;
+  height: 65px;
   left: 108px;
   top: 0px;
   z-index: 5;
@@ -931,9 +938,12 @@ table {
 
 @media (min-width: 768px) and (max-width: 1199px) {
     .pac-card {
-      height: 25vh;
+      height: 7vh;
+      width: 340px;
+      margin-left: 0px;
+      display: inline-block;
     }
-
+    
     .pac-controls input {
     margin-left: 10px;
     margin-right: auto;

@@ -42,124 +42,96 @@ Social sharing buttons - for tourists to share with friends and family.
 
 <h3>Structure Plane</h3> 
 <h4>Structure of Information</h4>
-Interaction Design - I use a traditional navigation system with a navigation bar 
-across the top as well as a band logo functioning as a link to homepage.
+Interaction Design - I've designed a simple single page webpage.
 
-Information Architecture - I aim to keep things clear and easy for users by having
-seperate pages for bookings, tour dates, photos and news with identical nav and
-footer layouts on all pages. 
-The main section of the page will change but I aim to stick to the maroon 
-and grey color schemes.
+Information Architecture - The webpage flows from 
+searchbar to map and on to recommended places based on the search results. 
+The pictures featured on the page are all panoramic shots of Ireland
+showcasing the landscapes tourists can see for themselves. 
 
 
 <h3>Skeleton Plane</h3> 
 <h4>How will our information be represented and how will
 the user navigate to the information and the features?</h4> 
-I decided that I would create four boxes on each page, one for each of the four 
-types of information.
-Scrolling would be used, as necessary, to allow all the desired information to 
-be available within the box.
-Interface Design means incorporating features like buttons in a way that users 
-can easily interact with
-the site. Since my site is quite simple I really did not need to do much design 
-here. I just kept in mind
-that my site should have a familiar look similar to other common sites.
-Navigation Design is the method we provide for the user to move through the site,
-successfully reaching
-the desired sections. I decided to have three types of navigation:
-(1) A top navigation bar that would be arranged in order of importance. This option would 
-be suitable for
-students interested in reaching my page about a particular course.[delete]
+I decided that I would create a visually striking header that contains changing
+backgrounds and a searchbar that is large enough to be clear in purpose but 
+suitably small enough to leave those background images to still be shown off.
+Scrolling would be used, as necessary, to allow user move further down through
+the page when neccessary. 
+The Google Maps takes up the majority of it's row due to it's importance to the 
+purpose of the webpage.
+Interface Design - I have utilised a search bar and a checkbox in the search bar. 
+The checkbox allows users to restrict their search to within the bounds of the 
+map view.
+// Since my site is quite simple I really did not need to do much design 
+// here. I just kept in mind
+// that my site should have a familiar look similar to other common sites.
+Navigation Design - since the project contains a single webpage, the only navigation
+required is scrolling. 
 
 <h3>Surface Plane</h3> 
 <h4>Finished Product</h4>
 
-The design will be consistent and visually appealing to customers/fans. A retro
-theme will be aimed for to match the time of the band's breakout years. 
+The color scheme is consistent between white backgrounds and headers in emerald 
+green. 
 
-Colors - maroon and grey. 
-Font - I used 'Spicy Rice' and 'Acme' both Google Fonts. I felt Spicy Rice was 
-the perfect fit for 'The Monkees' - giving a retro feel to their band name. 
-The logic behind 'Acme' was similar. 
-I felt it looked suitably retro while also being easy to read for the main bodies
-of text. For larger blocks of text I will use 'Muli'
-CTAs - I used call-to-action buttons on the homepage for booking enquiries, 
-booking tickets and following the band on social media (found on the footer).
-
-I will have a callout container on the top of the page showing the band performing. 
-This will take up most of the homepage upon loading to show. There will be seperate
- callout containers further down the page with CTA buttons for both booking and 
- tour dates. 
-Underneath the top callout container there will be a media area in which you can watch 
-and listen to some of the band's material. 
-The footer will contain a 'Subscribe' button. I will also have a 'Follow Us' section 
-in which all the main social media options will be there for fans to follow 
-'The Monkees' on. 
+Font - I used 'Irish-Grover' and 'Permanent Markers' both Google Fonts. I felt Irish Grover was 
+the perfect fit for 'Experience Ireland' - as it gives the page a quirky font that
+castches the eye.
+The logic behind 'Permanent Marker' was similar. 
+I felt it was easy to read for the main bodies
+of text. 
 
 <h3>User Stories</h3>
-As a user, I want to be able to listen to The Monkees music on their website 
-and watch videos of old performances.
+As a user, I want search for destinations using a search bar on the homepage.
 
-As a user, I want to be able to see if they have any upcoming shows and book 
-tickets quickly if so desired.
+As a user, I want the map to refocus based on my searches or map location.
 
-As a user, I want to be able to follow social media accounts of the band from 
-their website.
+As a user, I would like recommendations of places to go based on my searches.
 
-As a user, I want to be able to make booking enquiries for the band to perform 
-at wedding/birthday party/other event. 
 
-As a user, I want to be able to see photos of the band. 
 
 
 The wireframe can be viewed on the link below.
-https://docs.google.com/presentation/d/1OSvmCyMw9l1NM5TPv1I4JNiyqv37ptrMF1VSPCYz58A/edit?usp=sharing
+https://www.figma.com/file/H1tJS5dMolulHoC4ggyj3PHE/ExperienceIreland.com-Paul-s-wireframe?node-id=2%3A78
 
 Features
 In this section, you should go over the different parts of your project, and 
 describe each in a sentence or so.
 
 Existing Features
-Bookings Form - allows users interested in booking the band to make an enquiry,
-by having them fill out an enquiry form. This was originally to be a modal 
-however after discussions with mentor, it was changed to a form on the
-bookings.html page under 'What We Do'. The bookings.html page in itself can be 
-accessed via the navbar or the callout on the homepage. 
-On the bookings.html page, there is a 'What people say about us' section for 
-those interested in  booking the band to see how previous bookings have been 
-reviewed.
+Search Bar - allows users to input places they know in Ireland or allow 
+autocomplete to help narrow down their searches
 
 
-tour-dates.html - allows users interested in seeing the band live to view their 
-tour dates, venues and click a ticket icon to take them to a ticketing website. 
+Map - map refocuses to area searched for. Map zooms in sufficiently for user after
+search to show markers which can be clicked to find out more about each specific
+location.
 
-'Listen' - on the homepage allows users to listen to some of the band's 
-greatest hits. 
+Recommendations - after a specific place search, users will see recommend tourist 
+locations for them to visit
 
-'Watch' - on the homepage gives users a video of the band performing which can 
-be considered as an incentive to see them live or book them for an event.
 
-'Footer' - has a subscribe button for users to subscribe to newsletters as well 
-as links to various social media buttons. 'Follow Us' - on the homepage gives 
-users a convenient place to find their social media platforms of choice to 
-follow the band on. 
 
 
 
 <h3>Technologies Used</h3>
-Bootstrap library was used to aid development with its grid system, navigation 
-menu, modals, etc. Bootstrap 3.3.7
-jQuery was used to aid the implementation of Bootstrap (e.g. the burger menu) 
-and to assist deployment of Fancybox
-Google Fonts has been the source of the 'Spicy Rice', 'Acme', 'Muli' as I
-believe the fonts are both clear and suitably 'retro' looking. 
-I used Font Awesome for the social media icons button in the footer.
+Bootstrap library was used to aid development with its grid system
+Bootstrap 3.3.7
+
+**jQuery was used to aid the implementation of Bootstrap (e.g. the burger menu) 
+and to assist deployment of Fancybox**
+
+Google Fonts has been the source of the 'Irish Grover' and 'Permanent Marker' as I
+believe the fonts are both clear suitable for this project 
+
+**I used Font Awesome for the social media icons button in the footer.
 
 
 <h2>Testing</h2>
 
 I have extensively tested the website on the following physical devices - Mobile - 
-HTC Desire, Huawei P20 Lite, iPhone 4 while also testing across a number of other
+HTC Desire, Huawei P20 Lite, Huawei PSmart 2019 and **** while also testing across a number of other
 sample devices through Chrome developer tools. 
 Tablet - Lenovo Tab 10, Kindle Fire 7, iPad, Samsung Galaxy Tab 10 while also 
 testing across a number of other sample devices through Chrome developer tools. 

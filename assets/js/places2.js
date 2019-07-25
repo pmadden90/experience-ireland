@@ -96,7 +96,7 @@ function onPlaceChanged() {
   var place = autocomplete.getPlace();
   if (place.geometry) {
     map.panTo(place.geometry.location);
-    map.setZoom(12);
+    map.setZoom(17);
     search();
   }
   else {
@@ -104,19 +104,16 @@ function onPlaceChanged() {
   }
 }
 
+
+
 // Search for hotels in the selected city, within the viewport of the map.
 function search() {
-  var hotelSearch = {
+  var search = {
     bounds: map.getBounds(),
     types: ['lodging']
   };
 
-  //var poiSearch = {
-  // bounds: map.getBounds(),
-  // types: ['point_of_interest']
-  // };
-
-  places.nearbySearch(hotelSearch, function(results, status) {
+  places.nearbySearch(search, function(results, status) {
     if (status === google.maps.places.PlacesServiceStatus.OK) {
       clearResults();
       clearMarkers();
@@ -140,7 +137,6 @@ function search() {
       }
     }
   });
-
 }
 
 function clearMarkers() {
@@ -157,12 +153,11 @@ function clearMarkers() {
 function setAutocompleteCountry() {
   var categories = document.getElementById('category').value;
   if (category == 'all') {
-    autocomplete.setComponentRestrictions({ 'category': [] });
-    map.setCenter({ lat: 13, lng: 0 });
+    autocomplete.setComponentRestrictions({'category': []});
+    map.setCenter({lat: 13, lng: 0});
     map.setZoom(2);
-  }
-  else {
-    autocomplete.setComponentRestrictions({ 'categories': category });
+  } else {
+    autocomplete.setComponentRestrictions({'categories': category});
     map.setCenter(categories[category].center);
     map.setZoom(categories[category].zoom);
   }
@@ -177,7 +172,7 @@ function dropMarker(i) {
 }
 
 function addResult(result, i) {
-  var results = document.getElementById('localHotels');
+  var results = document.getElementById('results');
   var markerLetter = String.fromCharCode('A'.charCodeAt(0) + (i % 26));
   var markerIcon = MARKER_PATH + markerLetter + '.png';
 
@@ -201,7 +196,6 @@ function addResult(result, i) {
   results.appendChild(tr);
 }
 
-
 function clearResults() {
   var results = document.getElementById('results');
   while (results.childNodes[0]) {
@@ -213,30 +207,29 @@ function clearResults() {
 // anchored on the marker for the hotel that the user selected.
 function showInfoWindow() {
   var marker = this;
-  places.getDetails({ placeId: marker.placeResult.place_id },
-    function(place, status) {
-      if (status !== google.maps.places.PlacesServiceStatus.OK) {
-        return;
-      }
-      infoWindow.open(map, marker);
-      buildIWContent(place);
-    });
+  places.getDetails({placeId: marker.placeResult.place_id},
+      function(place, status) {
+        if (status !== google.maps.places.PlacesServiceStatus.OK) {
+          return;
+        }
+        infoWindow.open(map, marker);
+        buildIWContent(place);
+      });
 }
 
 // Load the place information into the HTML elements used by the info window.
 function buildIWContent(place) {
   document.getElementById('iw-icon').innerHTML = '<img class="hotelIcon" ' +
-    'src="' + place.icon + '"/>';
+      'src="' + place.icon + '"/>';
   document.getElementById('iw-url').innerHTML = '<b><a href="' + place.url +
-    '">' + place.name + '</a></b>';
+      '">' + place.name + '</a></b>';
   document.getElementById('iw-address').textContent = place.vicinity;
 
   if (place.formatted_phone_number) {
     document.getElementById('iw-phone-row').style.display = '';
     document.getElementById('iw-phone').textContent =
-      place.formatted_phone_number;
-  }
-  else {
+        place.formatted_phone_number;
+  } else {
     document.getElementById('iw-phone-row').style.display = 'none';
   }
 
@@ -248,15 +241,13 @@ function buildIWContent(place) {
     for (var i = 0; i < 5; i++) {
       if (place.rating < (i + 0.5)) {
         ratingHtml += '&#10025;';
-      }
-      else {
+      } else {
         ratingHtml += '&#10029;';
       }
-      document.getElementById('iw-rating-row').style.display = '';
-      document.getElementById('iw-rating').innerHTML = ratingHtml;
+    document.getElementById('iw-rating-row').style.display = '';
+    document.getElementById('iw-rating').innerHTML = ratingHtml;
     }
-  }
-  else {
+  } else {
     document.getElementById('iw-rating-row').style.display = 'none';
   }
 
@@ -271,8 +262,9 @@ function buildIWContent(place) {
     }
     document.getElementById('iw-website-row').style.display = '';
     document.getElementById('iw-website').textContent = website;
-  }
-  else {
+  } else {
     document.getElementById('iw-website-row').style.display = 'none';
   }
 }
+
+/*---------------------------*/
