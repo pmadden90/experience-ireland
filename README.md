@@ -63,9 +63,7 @@ purpose of the webpage.
 Interface Design - I have utilised a search bar and a checkbox in the search bar. 
 The checkbox allows users to restrict their search to within the bounds of the 
 map view.
-// Since my site is quite simple I really did not need to do much design 
-// here. I just kept in mind
-// that my site should have a familiar look similar to other common sites.
+
 Navigation Design - since the project contains a single webpage, the only navigation
 required is scrolling. 
 
@@ -87,7 +85,9 @@ As a user, I want search for destinations using a search bar on the homepage.
 
 As a user, I want the map to refocus based on my searches or map location.
 
-As a user, I would like recommendations of places to go based on my searches.
+As a user, I would like recommendations of places to go.
+
+As a user, I would like to book flights to my airport of choice.
 
 
 
@@ -95,9 +95,7 @@ As a user, I would like recommendations of places to go based on my searches.
 The wireframe can be viewed on the link below.
 https://www.figma.com/file/H1tJS5dMolulHoC4ggyj3PHE/ExperienceIreland.com-Paul-s-wireframe?node-id=2%3A78
 
-Features
-In this section, you should go over the different parts of your project, and 
-describe each in a sentence or so.
+
 
 Existing Features
 Search Bar - allows users to input places they know in Ireland or allow 
@@ -108,8 +106,11 @@ Map - map refocuses to area searched for. Map zooms in sufficiently for user aft
 search to show markers which can be clicked to find out more about each specific
 location.
 
-Recommendations - after a specific place search, users will see recommend tourist 
-locations for them to visit
+Recommendations - Originally, the plan was that after a specific place was searchd,
+users would see recommended tourist locations for them to visit but this became 
+a stumbling block in this particular project
+
+Skyscanner Widget - Allows users to book flights if they so desire
 
 
 
@@ -119,13 +120,10 @@ locations for them to visit
 Bootstrap library was used to aid development with its grid system
 Bootstrap 3.3.7
 
-**jQuery was used to aid the implementation of Bootstrap (e.g. the burger menu) 
-and to assist deployment of Fancybox**
-
+**jQuery was used to aid the implementation of Bootstrap 
 Google Fonts has been the source of the 'Irish Grover' and 'Permanent Marker' as I
 believe the fonts are both clear suitable for this project 
 
-**I used Font Awesome for the social media icons button in the footer.
 
 
 <h2>Testing</h2>
@@ -155,48 +153,38 @@ Successful
 User can search for flights from their origin of choice to their destination of
 choice
 
-Across all devices, I was able to successfully complete each user story. 
+Across all devices, I was able to successfully complete each user story with the 
+exception of the recommendations - I did not include this on the mobile version. 
 
 
-<h5>To listen to The Monkees music on their website and watch videos of old 
-performances.</h5>
-Go to the homepage. Scroll down to the selection of songs and click play.
-To watch video, scroll further down homepage (below tour callout container) 
-and click play on the embedded Youtube video. 
-Alternatively, to listen to music, click on 'Our Music' on navbar. Select any song
-from Spotify playlist featured at top of the page. 
+<h5>To search for destinations using a search bar on the homepage.</h5>
+This search bar works successfully. Users can search for anywhere or select a checkbox
+to restrict the search suggestions to what can be seen in the map. 
 
-<h5>To be able to see if they have any upcoming shows and book tickets quickly 
-if so desired.</h5>
-On homepage, scroll down to 'See The Monkees On Tour' callout container and click
-on 'Buy Tickets And Show More' button. This will take you to the tour dates list. 
-Alternatively, click on 'Tour Dates' on navbar to find the same page. Tickets 
-can be purchased by clicking on the tickets button to the right hand side of the 
-table. 
+<h5>For the map to refocus based on my searches or map location</h5>
+When area searched for using Autocomplete suggestions, the map does indeed refocus 
+and zoom in on the searched area. 
 
-<h5>To be able to follow social media accounts of the band from their website.</h5>
-Scroll to the footer on any page to get a link to each of the respective social 
-media pages with the exception of Snapchat. Snapchat is a dummy link due to The
-Monkees not having a page. 
+<h5>Receive recommendations of places to go.</h5>
+Due to a number of difficulties I encountered trying to make this work, a very basic 
+recommendations section was included but was not what was intended for this area
 
-<h5>To be able to make booking enquiries for the band to perform at wedding/birthday
-party/other event. </h5>
-On the homepage, scroll down to the bookings callout container which is below the 
-Youtube video and above the footer. Click on the button to take you to bookings 
-page. 
-Alternatively, use 'Bookings' on the navbar to navigate to this same page. 
-Fill in the form on bookings page to submit enquiry. 
-
-<h5>To be able to see photos of the band.</h5> 
-Using the navbar, click on 'Photos' to take you to the photos page on which you
-can see a selection of photos of the band. 
+<h5>To book flights to airport of choice </h5>
+To the right hand side of the map, users can input their origin and destination
+airports. When search submitted, Skyscanner opens in new tab with the details of
+user's search. 
 
 
-On the 'Our Music' page, one bug has been found. The images for 4 of the 6 
-featured albums that are clickable links to Amazon store do not show on Safari
-(iPhone and iPad physically tested), Firefox or Edge. This can be fixed at a 
-later date.
-
+<h4>Difficulties/Bugs</h4>
+I encountered a number of difficulties throughout this project. 
+Google Places API does not allow users to search for multiple place types from 
+one map. This prevented me creating an extensive recommendations section that I 
+would have been happy with. The Google Map occasionally does not appear and the 
+page needs to be refreshed before it will appear. 
+I have found this project frustrating as when seeking help on Slack or StackOverflow,
+I would regularly ask questions and seek support but never received a reply. 
+This in itself, prevented me from extending my understanding around the areas I 
+needed help in. 
 
 
 Deployment
@@ -212,16 +200,9 @@ Credits
 Media
 
 The photos used in this site were obtained from ...
-The photo used for the ticekts callout conatiner was obtained from 
-https://commons.wikimedia.org/wiki/File:The_Monkees.jpg
-The photo used on the booking callout container came from Pixabay.com
-I also used the logo from https://commons.wikimedia.org/wiki/File:Monkees-logo.png too. 
-Image for callout container on homepage sourced from - 
-https://www.monkeeslivealmanac.com/1966-promotional-tour.html
-Image for main callout container on smaller screens was sourced from - 
-https://medium.com/cuepoint/fake-it-til-you-make-it-how-the-monkees-performed-live-f9fea6c9a6b9
-
-Images for albums sourced from respective pages on Amazon.co.uk (29/11/18)
+The photos have been sourced from Wikipedia (under the creative commons licence) or 
+Pixabay. 
 
 Acknowledgements
-I received 
+I received inspiration for this project from the Google Places API documentation, 
+the Tripadvisor page and Wes Bos 'Javascript 30 Day Challenge'.
