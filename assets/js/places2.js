@@ -23,7 +23,7 @@ var countries = {
 
 var category = {
   'acc': {
-    bounds: map.getBounds(),
+    bounds: map.fitBounds(),
     types: ['lodging']
   }/*,
   'caf': {
@@ -64,7 +64,7 @@ function initMap() {
 
 
   infowindow = new google.maps.InfoWindow({
-    content: '<div><strong>' + place.name + '</strong><br>' + 'Place ID: ' + place.place_id + '<br>' + type + 'br' + place.formatted_address + '</div>' + '<div style="border-top: 1px solid rgb(204, 204, 204); margin-top: 9px; padding: 6px; font-size: 13px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; font-family: Roboto, Arial;"><a href="' + place.url + '" target="_blank" rel="noopener" style="cursor: pointer; color: rgb(66, 127, 237); text-decoration: none;">View on Google Maps</a></div>' +
+    content: '<div><strong>' + place.name + '</strong><br>' + 'Place ID: ' + place.place_id + '<br>' + type + 'br' + place.formatted_address + '</div>' + '<div style="border-top: 1px solid rgb(204, 204, 204); margin-top: 9px; padding: 6px; font-size: 13px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; font-family: Roboto, Arial;"><a href="' + place.url + '" target="_blank" rel="noopener" style="cursor: pointer; color: rgb(66, 127, 237); text-decoration: none;">Find out more</a></div>' +
       '<div>API version ' + google.maps.version + '</div>'
   });
 
@@ -96,8 +96,8 @@ function onPlaceChanged() {
   var place = autocomplete.getPlace();
   if (place.geometry) {
     map.panTo(place.geometry.location);
-    map.setZoom(17);
-    search();
+    map.setZoom(16);
+   // search();
   }
   else {
     document.getElementById('autocomplete').placeholder = 'Enter a town or city';
@@ -107,10 +107,74 @@ function onPlaceChanged() {
 
 
 // Search for hotels in the selected city, within the viewport of the map.
-function search() {
+function search(lodging) {
   var search = {
     bounds: map.getBounds(),
     types: ['lodging']
+  };
+
+  places.nearbySearch(search, function(results, status) {
+    if (status === google.maps.places.PlacesServiceStatus.OK) {
+      clearResults();
+      clearMarkers();
+      // Create a marker for each hotel found, and
+      // assign a letter of the alphabetic to each marker icon.
+      for (var i = 0; i < results.length; i++) {
+        var markerLetter = String.fromCharCode('A'.charCodeAt(0) + (i % 26));
+        var markerIcon = MARKER_PATH + markerLetter + '.png';
+        // Use marker animation to drop the icons incrementally on the map.
+        markers[i] = new google.maps.Marker({
+          position: results[i].geometry.location,
+          animation: google.maps.Animation.DROP,
+          icon: markerIcon
+        });
+        // If the user clicks a hotel marker, show the details of that hotel
+        // in an info window.
+        markers[i].placeResult = results[i];
+        google.maps.event.addListener(markers[i], 'click', showInfoWindow);
+        setTimeout(dropMarker(i), i * 100);
+        addResult(results[i], i);
+      }
+    }
+  });
+}
+
+function search(bar) {
+  var search = {
+    bounds: map.getBounds(),
+    types: ['bar']
+  };
+
+  places.nearbySearch(search, function(results, status) {
+    if (status === google.maps.places.PlacesServiceStatus.OK) {
+      clearResults();
+      clearMarkers();
+      // Create a marker for each hotel found, and
+      // assign a letter of the alphabetic to each marker icon.
+      for (var i = 0; i < results.length; i++) {
+        var markerLetter = String.fromCharCode('A'.charCodeAt(0) + (i % 26));
+        var markerIcon = MARKER_PATH + markerLetter + '.png';
+        // Use marker animation to drop the icons incrementally on the map.
+        markers[i] = new google.maps.Marker({
+          position: results[i].geometry.location,
+          animation: google.maps.Animation.DROP,
+          icon: markerIcon
+        });
+        // If the user clicks a hotel marker, show the details of that hotel
+        // in an info window.
+        markers[i].placeResult = results[i];
+        google.maps.event.addListener(markers[i], 'click', showInfoWindow);
+        setTimeout(dropMarker(i), i * 100);
+        addResult(results[i], i);
+      }
+    }
+  });
+}
+
+function search(restaurant) {
+  var search = {
+    bounds: map.getBounds(),
+    types: ['restaurant']
   };
 
   places.nearbySearch(search, function(results, status) {
@@ -172,7 +236,7 @@ function dropMarker(i) {
 }
 
 function addResult(result, i) {
-  var results = document.getElementById('results');
+  var results = document.getElementById('hotelResults');
   var markerLetter = String.fromCharCode('A'.charCodeAt(0) + (i % 26));
   var markerIcon = MARKER_PATH + markerLetter + '.png';
 
@@ -197,7 +261,7 @@ function addResult(result, i) {
 }
 
 function clearResults() {
-  var results = document.getElementById('results');
+  var results = document.getElementById('hotelResults');
   while (results.childNodes[0]) {
     results.removeChild(results.childNodes[0]);
   }

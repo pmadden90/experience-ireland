@@ -44,7 +44,7 @@ var category = {
 };
 
 function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
+  map = new google.maps.Map(document.getElementById('placesMap'), {
     zoom: countries['ie'].zoom,
     center: countries['ie'].center,
     mapTypeControl: false,
@@ -61,7 +61,7 @@ function initMap() {
         // Restrict the search to the default country, and to place type "cities".
         autocomplete = new google.maps.places.Autocomplete(
             /** @type {!HTMLInputElement} */ (
-                document.getElementById('autocompleteHotels')), {
+                document.getElementById('recommend-places')), {
               types: ['(cities)'],
               componentRestrictions: countryRestrict
             });
@@ -83,7 +83,7 @@ function initMap() {
           map.setZoom(12);
           search();
         } else {
-          document.getElementById('autocompleteHotels').placeholder = 'Enter a city';
+          document.getElementById('recommend-places').placeholder = 'Enter a city';
         }
       }
 
@@ -153,7 +153,7 @@ function initMap() {
       }
 
       function addResult(result, i) {
-        var results = document.getElementById('results');
+        var results = document.getElementById('hotelResults');
         var markerLetter = String.fromCharCode('A'.charCodeAt(0) + (i % 26));
         var markerIcon = MARKER_PATH + markerLetter + '.png';
 
@@ -178,7 +178,7 @@ function initMap() {
       }
 
       function clearResults() {
-        var results = document.getElementById('results');
+        var results = document.getElementById('hotelResults');
         while (results.childNodes[0]) {
           results.removeChild(results.childNodes[0]);
         }
