@@ -715,6 +715,12 @@ mySlides {
     width: 95%;
     height: 100%;
   }
+  #bottom-header {
+    background-color: grey;
+    text-align: center;
+    margin-top: 45vh;
+}
+
 }
 
 
@@ -838,6 +844,12 @@ mySlides {
     width: 95%;
     height: 100%;
   }
+  
+  #bottom-header {
+    background-color: grey;
+    text-align: center;
+    margin-top: 60vh;
+}
 }
 
 /**/

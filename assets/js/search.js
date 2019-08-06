@@ -1,3 +1,6 @@
+//This JSon file was produced by myself but ended up not being utilised for this
+//project
+
 const endpoint = "https://api.myjson.com/bins/13exec";
 const county = [];
 fetch(endpoint)

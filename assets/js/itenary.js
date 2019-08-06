@@ -1,3 +1,4 @@
+//Inspired by JavaScript 30 For 30 day challenge
 const addItems = document.querySelector('.add-items');
   const itemsList = document.querySelector('.itenary');
   const items = JSON.parse(localStorage.getItem('items')) || [];

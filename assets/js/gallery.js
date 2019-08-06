@@ -1,3 +1,4 @@
+//Inspired by JavaScript 30 For 30 day challenge
 const panels = document.querySelectorAll('.panel');
 
 function toggleOpen() {

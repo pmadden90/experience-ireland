@@ -1,3 +1,4 @@
+/*This was written by myself but was not utilised or this project in the end*/
 function initMap(){
       // Map options
       var options = {
