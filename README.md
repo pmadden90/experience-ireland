@@ -139,69 +139,21 @@ Laptop/Desktop - Asus L403.
 
  
 <h3>Test</h3>
-<h4>Desktop Menu</h4>
-Buttons react on hover
+<h4>Map</h4>
+Autocomplete locations appear in search bar when typed
 Successful
-Buttons take users to respective page
+Clicking on 'Restrict to view' restricts autocomplete results to map view
 Successful
-Active page is clear (both visually and screen reader)
+User can zoom in on map and click on markers to find out more
 Successful
-
-<h4>Mobile Menu</h4>
-Mobile menu appear on screen widths 767px and below
-Successful
-Menu appears after selecting burger icon
-Successful
-Menu closes after selecting burger icon
-Successful
-
-<h4>CTA Buttons Homepage</h4>
-Buy Tickets button on callout container takes user to relevant page on click
-Successful
-Booking button on callout container takes user to relevant page on click
-Successful
-
-<h4>Footer</h4>
-Footer links take users to respective site (in new tab)
-Successful
-
-<h4>Spotify</h4>
-Spotify iframe appears on Our Music page
-Successful
-Spotify iframe plays music as intended
-Successful
-
-<h4>Video</h4>
-Featured video playable and has full Youtube Functionality
-Successful
-Videos show play icon on hover
-Successful
-Videos take up one column on screens widths 767px and below
-Successful
-
-<h4>Bookings</h4>
-On desktop and tablet (landscape), table has 5 columns
-Successful
-On mobile or tablet (portrait), table has 3 columns
-Successful
-Selecting 'Buy Tickets' takes user to relevant site (in new tab)
-Successful (dummy links used)
 
 <h4>Photo Gallery</h4>
-Booking enquiry form can be submitted upon completion
-Successful
-Calendar appears to select date when 'Date of Event' box selected
-Successful
-All fields required to be filled in
+Each image is clickable to expand it in width
 Successful
 
-<h4>Tour Dates/Tickets</h4>
-On desktop and tablet (landscape), table has 5 columns
-Successful
-On mobile or tablet (portrait), table has 3 columns
-Successful
-Selecting 'Buy Tickets' takes user to relevant site (in new tab)
-Successful (dummy links used)
+<h4>Skyscanner Widget</h4>
+User can search for flights from their origin of choice to their destination of
+choice
 
 Across all devices, I was able to successfully complete each user story. 
 
