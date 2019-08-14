@@ -9,6 +9,8 @@
 
 cdproject2-paul-madden
 
+<h2>Experience Ireland
+
 I am building this website as a tourist website encouraging travel to Ireland.
 
 <h2>UX</h2>
@@ -20,13 +22,9 @@ I am building this website as a tourist website encouraging travel to Ireland.
 
 *To receive suggestions of places to visit or activities to try in Ireland.
 
-<h3>Strategy Plane</h3> 
-<h4>Aims</h4>
+
 A website for tourists to learn more about Ireland and encourage them to visit
 
-<h3>Scope Plane</h3> 
-<h4>Features included in design based on information from the strategy 
-plane</h4>
 
 Google Places API. 
 
@@ -39,20 +37,14 @@ A 'Featured Places' section to showcase 'hidden gems' around Ireland.
 Social sharing buttons - for tourists to share with friends and family.
 
 
-
-<h3>Structure Plane</h3> 
-<h4>Structure of Information</h4>
 Interaction Design - I've designed a simple single page webpage.
 
-Information Architecture - The webpage flows from 
-searchbar to map and on to recommended places based on the search results. 
+The webpage flows from searchbar to map and on to recommended places based on
+the search results. 
 The pictures featured on the page are all panoramic shots of Ireland
 showcasing the landscapes tourists can see for themselves. 
 
 
-<h3>Skeleton Plane</h3> 
-<h4>How will our information be represented and how will
-the user navigate to the information and the features?</h4> 
 I decided that I would create a visually striking header that contains changing
 backgrounds and a searchbar that is large enough to be clear in purpose but 
 suitably small enough to leave those background images to still be shown off.
@@ -60,15 +52,14 @@ Scrolling would be used, as necessary, to allow user move further down through
 the page when neccessary. 
 The Google Maps takes up the majority of it's row due to it's importance to the 
 purpose of the webpage.
-Interface Design - I have utilised a search bar and a checkbox in the search bar. 
+
+I have utilised a search bar and a checkbox in the search bar. 
 The checkbox allows users to restrict their search to within the bounds of the 
 map view.
 
-Navigation Design - since the project contains a single webpage, the only navigation
-required is scrolling. 
+Since the project contains a single webpage, the only navigation required is 
+scrolling. 
 
-<h3>Surface Plane</h3> 
-<h4>Finished Product</h4>
 
 The color scheme is consistent between white backgrounds and headers in emerald 
 green. 

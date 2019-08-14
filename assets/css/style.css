@@ -433,6 +433,10 @@ tr:nth-child(even) {
   transform: translateY(0);
 }
 
+.panel a {
+  color: #FAFAFA;
+}
+
 .panel p {
   text-transform: uppercase;
   font-family: 'Irish Grover', cursive;
