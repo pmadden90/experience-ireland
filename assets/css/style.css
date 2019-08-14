@@ -75,12 +75,6 @@ h4 {
   opacity: 1;
 }
 
-.stw-header-bottom {
-  color: #FFFFFF;
-  opacity: 1;
-  background-image: url("../media/devilsbit-panoramic2.jpg");
-  background-size: cover;
-}
 
 .tagline {
   font-size: 0.5em;
@@ -352,6 +346,9 @@ tr:nth-child(even) {
 }
 
 /*Recommendations Section*/
+#gallery-captions {
+  margin-top: 65px;
+}
 
 *:before,
 *:after {
@@ -452,12 +449,7 @@ tr:nth-child(even) {
 }
 
 
-/*Footer*/
 
-#bottom-header {
-  background-color: grey;
-  text-align: center;
-}
 
 /*Extra*/
 
@@ -481,7 +473,6 @@ table {
 }
 
 #findhotels {
-  /*position: absolute;*/
   text-align: right;
   width: 100px;
   font-size: 14px;
@@ -492,7 +483,6 @@ table {
 }
 
 #locationField {
-  /*position: absolute;*/
   width: 340px;
   height: 65px;
   left: 108px;
@@ -504,7 +494,6 @@ table {
 }
 
 #controls {
-  /*position: absolute;*/
   left: 300px;
   width: 140px;
   top: 0px;
@@ -565,6 +554,19 @@ table {
 
 }
 
+/*Footer*/
+
+#bottom-header {
+  background-color: grey;
+  text-align: center;
+}
+
+.stw-header-bottom {
+  color: #FFFFFF;
+  opacity: 1;
+  background-image: url("../media/devilsbit-panoramic2.jpg");
+  background-size: cover;
+}
 
 
 
