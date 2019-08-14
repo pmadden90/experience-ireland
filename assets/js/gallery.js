@@ -2,12 +2,10 @@
 const panels = document.querySelectorAll('.panel');
 
 function toggleOpen() {
-  console.log('widen photo');
   this.classList.toggle('open');
 }
 
 function toggleActive(e) {
-  console.log(e.propertyName);
   if (e.propertyName.includes('flex')) {
     this.classList.toggle('open-active');
   }
@@ -22,7 +20,7 @@ carousel();
 
 function carousel() {
   var i;
-  var x = document.getElementsByClassName("mySlides");
+  var x = document.getElementsByClassName("my-slides");
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }

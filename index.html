@@ -6,10 +6,9 @@
     <meta name="theme-color" content="#50C878" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/media/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/media/icons/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    
 
     <title>Visit Ireland</title>
 
@@ -18,7 +17,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=IM+Fell+English|Irish+Grover|Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 </head>
 
@@ -57,14 +55,14 @@
                 </div>
             </div>
             <div class="under-overlay">
-                <img class="mySlides" src="assets/media/clew-bay.jpg">
-                <img class="mySlides" src="assets/media/cliffs-of-moher.jpg">
-                <img class="mySlides" src="assets/media/connemara-panorama.jpg">
-                <img class="mySlides" src="assets/media/ireland-panorama.jpg">
-                <img class="mySlides" src="assets/media/wild-atlantic-road.jpg">
-                <img class="mySlides" src="assets/media/keem-bay.jpg">
-                <img class="mySlides" src="assets/media/newgrange.jpg">
-                <img class="mySlides" src="assets/media/strandhill-sligo.jpg">
+                <img class="my-slides" src="assets/media/clew-bay.jpg" alt="Clew Bay">
+                <img class="my-slides" src="assets/media/cliffs-of-moher.jpg" alt="Clew Bay">
+                <img class="my-slides" src="assets/media/connemara-panorama.jpg" alt="Clew Bay">
+                <img class="my-slides" src="assets/media/ireland-panorama.jpg" alt="Clew Bay">
+                <img class="my-slides" src="assets/media/wild-atlantic-road.jpg" alt="Clew Bay">
+                <img class="my-slides" src="assets/media/keem-bay.jpg" alt="Clew Bay">
+                <img class="my-slides" src="assets/media/newgrange.jpg" alt="Clew Bay">
+                <img class="my-slides" src="assets/media/strandhill-sligo.jpg" alt="Clew Bay">
             </div>
         </div>
 
@@ -105,7 +103,13 @@
 
                 <div class="col-xs-12 col-sm-2 skyscanner">
                     <h2>Book Those Flights</h2>
-                    <div data-skyscanner-widget="SearchWidget" data-enable-placeholders="true" data-target="_blank" data-widget-scale="1.3" data-powered-by-logo-colour="dark" data-locale="en-GB" data-params="fontColour:#50C878;buttonColour:#50C878;buttonFontColour:#fff;"></div>
+                    <div data-skyscanner-widget="SearchWidget" 
+                    data-enable-placeholders="true" data-target="_blank" 
+                    data-widget-scale="1.3" data-powered-by-logo-colour="dark" 
+                    data-locale="en-GB" 
+                    data-params="fontColour:#50C878;buttonColour:#50C878;buttonFontColour:#fff;">
+                        
+                    </div>
 
                     <h3>Airports</h3>
 
@@ -128,10 +132,10 @@
                         </tr>
                         <tr>
                             <td>Shannon</td>
-                            <td>West</td </tr>
+                            <td>West</td>
                             <tr>
-                                <td>Ireland West Airport Knock</td>
-                                <td>North-West</td>
+                            <td>Ireland West Airport Knock</td>
+                            <td>North-West</td>
                             </tr>
 
                     </table>
@@ -184,8 +188,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYnUjZz_QaP44ljPHqccjeFCNFxHAFB6k&libraries=places&callback=initMap" async defer></script>
     <script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-    <script src="assets/js/places2.js"></script>
     <script src="assets/js/autocomplete.js"></script>
     <script src="assets/js/gallery.js"></script>
     <script src="assets/js/itenary.js"></script>

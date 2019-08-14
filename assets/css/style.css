@@ -64,7 +64,6 @@ h4 {
   -moz-transition: all 0.12s ease-out;
   -o-transition: all 0.12s ease-out;
   color: #FFFFFF;
-  /* Emerald Green --> #50C878*/
 }
 
 .mobile-header {
@@ -79,7 +78,7 @@ h4 {
 .stw-header-bottom {
   color: #FFFFFF;
   opacity: 1;
-  background-image: url(../media/devilsbit-panoramic2.jpg);
+  background-image: url("../media/devilsbit-panoramic2.jpg");
   background-size: cover;
 }
 
@@ -102,7 +101,7 @@ h4 {
 
 .under-overlay {
   position: absolute;
-  top: 0px;
+  top: 0;
   overflow: hidden;
   width: 100vw;
   height: 40vh;
@@ -113,7 +112,7 @@ h4 {
   height: 40vh;
 }
 
-mySlides {
+.my-slides {
   height: 40vh;
   width: 100vw;
 }
@@ -171,7 +170,6 @@ mySlides {
 }
 
 .pac-controls {
-  /* display: inline-block;*/
   padding: 0px 5px;
   height: 1.5vh;
   object-fit: contain;
@@ -198,7 +196,7 @@ mySlides {
   font-size: 20px;
   font-weight: 300;
   margin-left: 0px;
-  padding: 0px 10px 0 10px;
+  padding: 0 10px 0 10px;
   text-overflow: ellipsis;
   width: 85%;
   height: 55px;
@@ -286,7 +284,6 @@ mySlides {
   background-color: #f0f0f0;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
-  -ms-transition: all 0.2s;
   -o-transition: all 0.2s;
 }
 
@@ -303,7 +300,6 @@ mySlides {
 /*Map*/
 
 .map-area {
-  background-color: #COCOCO;
   min-height: 75vh;
   top: 35vh;
 }
@@ -313,8 +309,7 @@ mySlides {
   border-radius: 3px;
   border-color: #FAFAFA;
   border-width: 3px;
-  margin: 5px;
-  margin-bottom: 20px;
+  margin: 5px 0 20px 0;
   padding: 5px;
   width: 100%;
   display: inline-block;
@@ -375,8 +370,6 @@ tr:nth-child(even) {
   color: white;
   text-align: center;
   align-items: center;
-  /* Safari transitionend event.propertyName === flex */
-  /* Chrome + FF transitionend event.propertyName === flex-grow */
   transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
   flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
   background 0.2s;
@@ -459,7 +452,7 @@ tr:nth-child(even) {
 }
 
 
-/*Bottom Header*/
+/*Footer*/
 
 #bottom-header {
   background-color: grey;
