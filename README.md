@@ -7,13 +7,12 @@
     ----------------------------------------------------------------- 
 
 
-cdproject2-paul-madden
 
-<h2>Experience Ireland
+#Experience Ireland
 
 I am building this website as a tourist website encouraging travel to Ireland.
 
-<h2>UX</h2>
+##UX
 *Target audiences = tourists and potential tourists.
 
 *To search for destinations that interest the user in Ireland.
@@ -71,7 +70,7 @@ The logic behind 'Permanent Marker' was similar.
 I felt it was easy to read for the main bodies
 of text. 
 
-<h3>User Stories</h3>
+##User Stories
 As a user, I want search for destinations using a search bar on the homepage.
 
 As a user, I want the map to refocus based on my searches or map location.
@@ -107,7 +106,8 @@ Skyscanner Widget - Allows users to book flights if they so desire
 
 
 
-<h3>Technologies Used</h3>
+###Technologies Used
+HTML, CSS and JavaScript all utilised in this project
 Bootstrap library was used to aid development with its grid system
 Bootstrap 3.3.7
 
@@ -117,18 +117,18 @@ believe the fonts are both clear suitable for this project
 
 
 
-<h2>Testing</h2>
+##Testing
 
 I have extensively tested the website on the following physical devices - Mobile - 
-HTC Desire, Huawei P20 Lite, Huawei PSmart 2019 and **** while also testing across a number of other
+HTC Desire, Huawei P20 Lite and Huawei PSmart 2019  while also testing across a number of other
 sample devices through Chrome developer tools. 
 Tablet - Lenovo Tab 10, Kindle Fire 7, iPad, Samsung Galaxy Tab 10 while also 
 testing across a number of other sample devices through Chrome developer tools. 
 Laptop/Desktop - Asus L403. 
 
  
-<h3>Test</h3>
-<h4>Map</h4>
+###Test
+####Map
 Autocomplete locations appear in search bar when typed
 Successful
 Clicking on 'Restrict to view' restricts autocomplete results to map view
@@ -136,11 +136,11 @@ Successful
 User can zoom in on map and click on markers to find out more
 Successful
 
-<h4>Photo Gallery</h4>
+####Photo Gallery
 Each image is clickable to expand it in width
 Successful
 
-<h4>Skyscanner Widget</h4>
+####Skyscanner Widget
 User can search for flights from their origin of choice to their destination of
 choice
 
@@ -148,25 +148,37 @@ Across all devices, I was able to successfully complete each user story with the
 exception of the recommendations - I did not include this on the mobile version. 
 
 
-<h5>To search for destinations using a search bar on the homepage.</h5>
+#####To search for destinations using a search bar on the homepage
 This search bar works successfully. Users can search for anywhere or select a checkbox
 to restrict the search suggestions to what can be seen in the map. 
 
-<h5>For the map to refocus based on my searches or map location</h5>
+#####For the map to refocus based on my searches or map location
 When area searched for using Autocomplete suggestions, the map does indeed refocus 
 and zoom in on the searched area. 
 
-<h5>Receive recommendations of places to go.</h5>
+#####Receive recommendations of places to go.
 Due to a number of difficulties I encountered trying to make this work, a very basic 
 recommendations section was included but was not what was intended for this area
 
-<h5>To book flights to airport of choice </h5>
+#####To book flights to airport of choice
 To the right hand side of the map, users can input their origin and destination
 airports. When search submitted, Skyscanner opens in new tab with the details of
 user's search. 
 
+###Deployment
+Project has been deployed to GitHub Pages and is accessible here The process for
+deployment was as follows:
+Project pushed to GitHub repository
+Navigated to Settings in relevant GitHub repository
+Under GitHub Pages, selected relevant branch (master branch) and saved
 
-<h4>Difficulties/Bugs</h4>
+####Local Deployment
+Go to directory you would like to clone this project to. Download or clone this link
+https://github.com/pmadden90/experience-ireland.git and open in your chosen directory.
+
+git clone https://github.com/pmadden90/experience-ireland.git
+
+####Difficulties/Bugs
 I encountered a number of difficulties throughout this project. 
 Google Places API does not allow users to search for multiple place types from 
 one map. This prevented me creating an extensive recommendations section that I 
@@ -178,22 +190,17 @@ This in itself, prevented me from extending my understanding around the areas I
 needed help in. 
 
 
-Deployment
-Project has been deployed to GitHub Pages and is accessible here The process for
-deployment was as follows:
-Project pushed to GitHub repository
-Navigated to Settings in relevant GitHub repository
-Under GitHub Pages, selected relevant branch (master branch) and saved
 
 
-Credits
 
-Media
+##Credits
+
+###Media
 
 The photos used in this site were obtained from ...
 The photos have been sourced from Wikipedia (under the creative commons licence) or 
 Pixabay. 
 
-Acknowledgements
+###Acknowledgements
 I received inspiration for this project from the Google Places API documentation, 
 the Tripadvisor page and Wes Bos 'Javascript 30 Day Challenge'.
